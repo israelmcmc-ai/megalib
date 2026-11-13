@@ -1,0 +1,83 @@
+{
+  "energy_keV": 662,
+  "beam_radius_cm": 15.0,
+  "beam_area_cm2": 706.8583470577034,
+  "incident_photons": 100000,
+  "ge_geometric_area_cm2": 256,
+  "transport_seed": 43,
+  "response_seed": 20261113,
+  "source_direction": "+z, photons along -z",
+  "revan_inputs": 17194,
+  "revan_good_sequences": 17181,
+  "selected_compton_events": 12829,
+  "selected_photopeak_events": 11480,
+  "photopeak_by_nhits": {
+    "2": 2524,
+    "3": 4363,
+    "4": 4593
+  },
+  "post_reconstruction_rejections": {
+    "revan_rejected": 13,
+    "invalid_first_scatter": 303,
+    "first_pair_below_10keV": 608,
+    "short_lever_arm": 3441
+  },
+  "photopeak_arm_median_deg": -1.4873640281651959,
+  "photopeak_arm_central68_deg": [
+    -30.46041797071794,
+    4.320165666207357
+  ],
+  "stages": [
+    {
+      "selection": "Ge trigger + BGO veto (all hit counts)",
+      "accepted_events": 28543,
+      "incident_photons": 100000,
+      "efficiency": 0.28543,
+      "effective_area_cm2": 201.7585780006803,
+      "mc_sigma_cm2": 1.0094959690529577
+    },
+    {
+      "selection": "2\u20134 measured hits, BGO veto passed",
+      "accepted_events": 17194,
+      "incident_photons": 100000,
+      "efficiency": 0.17194,
+      "effective_area_cm2": 121.53722419310154,
+      "mc_sigma_cm2": 0.8434352644664145
+    },
+    {
+      "selection": "Revan Compton + first-pair cuts",
+      "accepted_events": 12829,
+      "incident_photons": 100000,
+      "efficiency": 0.12829,
+      "effective_area_cm2": 90.68285734403277,
+      "mc_sigma_cm2": 0.7475062142390143
+    },
+    {
+      "selection": "Revan Compton + 657\u2013667 keV photopeak",
+      "accepted_events": 11480,
+      "incident_photons": 100000,
+      "efficiency": 0.1148,
+      "effective_area_cm2": 81.14733824222435,
+      "mc_sigma_cm2": 0.7125642628860438
+    },
+    {
+      "selection": "Photopeak + |ARM| \u226410\u00b0 (optional)",
+      "accepted_events": 7206,
+      "incident_photons": 100000,
+      "efficiency": 0.07206,
+      "effective_area_cm2": 50.93621248897811,
+      "mc_sigma_cm2": 0.5780154774970708
+    }
+  ],
+  "truth_order_used": false,
+  "truth_containment_used": false,
+  "source_direction_used_for_sequence_search": false,
+  "photopeak_window_keV": [
+    657,
+    667
+  ],
+  "optional_arm_window_deg": [
+    -10,
+    10
+  ]
+}

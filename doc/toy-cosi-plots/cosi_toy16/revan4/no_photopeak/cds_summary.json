@@ -1,0 +1,24 @@
+{
+  "events": 12829,
+  "previous_photopeak_events": 11480,
+  "added_outside_photopeak": 1349,
+  "photopeak_cut": false,
+  "arm_cut": false,
+  "selected_by_nhits": {
+    "2": 3271,
+    "3": 4762,
+    "4": 4796
+  },
+  "measured_energy_range_keV": [
+    90.0987929532804,
+    665.2359324689617
+  ],
+  "retained_cuts": [
+    "2-4 measured Ge hits",
+    "Ge trigger and 50 keV per-panel BGO veto",
+    "good Revan classic sequence",
+    "valid first-scatter Compton cosine",
+    "reconstructed first and second sites each >=10 keV",
+    "first-to-second separation >=0.3 cm"
+  ]
+}

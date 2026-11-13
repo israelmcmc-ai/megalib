@@ -1,0 +1,27 @@
+{
+  "sample": "Existing Revan sample: no photopeak cut; BGO veto; 2-4 measured hits; first-pair cuts; no ARM cut",
+  "true_angle": "Angle between actual incoming and outgoing photon directions at the first primary-photon Compton scatter in Ge; prior primary Rayleigh/Compton direction changes are tracked",
+  "reconstructed_angle": "Existing Revan chosen first-site energy and sum of all other measured energies; sequencing is unchanged",
+  "bin_size_deg": 3,
+  "density": "Each panel normalized independently to unit integral; shared logarithmic color scale",
+  "matched_events": 12816,
+  "selected_events": 12829,
+  "groups": [
+    {
+      "label": "2 hits",
+      "events": 3264,
+      "eligible_selected_events": 3271,
+      "excluded_no_primary_ge_compton": 7,
+      "within_5deg_pct": 24.20343137254902,
+      "median_reco_minus_true_deg": -35.10925359400807
+    },
+    {
+      "label": ">2 hits (3\u20134)",
+      "events": 9552,
+      "eligible_selected_events": 9558,
+      "excluded_no_primary_ge_compton": 6,
+      "within_5deg_pct": 63.66206030150754,
+      "median_reco_minus_true_deg": -0.23731456814282836
+    }
+  ]
+}

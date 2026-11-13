@@ -1,0 +1,15 @@
+{
+  "primaries": 100000,
+  "stored_triggered_events": 52120,
+  "truth_full_energy": 12626,
+  "selected_compton_events": 1638,
+  "invalid_compton_cosines": 56,
+  "compton_edge_keV": 477.65040955473023,
+  "arm_median_deg": -0.04619564590419856,
+  "arm_central68_deg": [
+    -7.164853001211314,
+    6.947706284210298
+  ],
+  "seed_transport": 42,
+  "seed_response": 20261113
+}

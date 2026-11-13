@@ -1,0 +1,15 @@
+{
+  "sample": "Revan photopeak 657-667 keV, 2-4 hits, BGO veto, first-pair cuts, no ARM cut",
+  "events": 11480,
+  "method": "Half maximum of 0.05 degree histogram smoothed by Gaussian sigma 0.4 degree",
+  "fwhm_deg": 5.573230638303016,
+  "bootstrap_central68_deg": [
+    5.296241528539235,
+    5.808459992874034
+  ],
+  "bootstrap_repetitions": 500,
+  "arm_central68_deg": [
+    -30.46041797071794,
+    4.320165666207357
+  ]
+}

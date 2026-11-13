@@ -1,0 +1,85 @@
+{
+  "source": "Published COSI DC2 ancillary Bayesian response tables; NOT the private DC3 response named by the linked config",
+  "endpoint": "https://s3.us-west-1.wasabisys.com",
+  "bucket": "cosi-pipeline-public",
+  "files": [
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.compton.bad.rsp",
+      "size_bytes": 1569435,
+      "etag": "\"0895be78ff6883506f270cad09ad6c41\"",
+      "sha256": "86382804116cb92275b04374f344df3fd8f34b6873908540f89e8e2748e647d8"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.compton.good.rsp",
+      "size_bytes": 1463718,
+      "etag": "\"87af222cfff635de316604bc7c7356ae\"",
+      "sha256": "598b906dbb6de41be862c464bfe336b7144da19c1e465c140bdbadda65959d04"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.comptondistance.bad.rsp",
+      "size_bytes": 120560,
+      "etag": "\"d0ae50461ceb78ded1b73f4df5e47cbf\"",
+      "sha256": "753ef5bf9c000cb09dddd7faecaa9c40f5af21afce7c32a6ba6e12711268d100"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.comptondistance.good.rsp",
+      "size_bytes": 109936,
+      "etag": "\"5dbfe2cbdce5b4032478d8e1d0422ed9\"",
+      "sha256": "b8348c6ddc1e138a35bf1f684589a10fe06fbaa83c28f3917bcc8fec570acebc"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.dual.bad.rsp",
+      "size_bytes": 110578,
+      "etag": "\"787ee8ed9555cafb1daa7ae55e2d557b\"",
+      "sha256": "67bf63d0cd05bab061be439bdb3e8c3759bb697d7ef6e8187406e9bd93197589"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.dual.good.rsp",
+      "size_bytes": 107829,
+      "etag": "\"c17d06454aebcd7937d2b35ce451fd42\"",
+      "sha256": "7d0ff383bfe7467ce198a5e365918d97907b558bc07662a00a06fc2ec8326064"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.goodbad.rsp",
+      "size_bytes": 483,
+      "etag": "\"c1ccfbc834b6d7acb503b7fc0311d348\"",
+      "sha256": "04ff5cc6478d90fd87721fe63b1533711e8b1736cdad3b8144c95a56eefe9cb5"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.photodistance.bad.rsp",
+      "size_bytes": 110695,
+      "etag": "\"88a477507acf7e0e3e2ca3d761e42eaa\"",
+      "sha256": "848284d464c75432b18b68b460c6feffc7695b0df664c037f9619f5c81522215"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.photodistance.good.rsp",
+      "size_bytes": 106002,
+      "etag": "\"2885fc0fd7d4328274ff6f42f2653508\"",
+      "sha256": "0cd04b9e301d90b938cdf44b93970b0fff58c230cde3994d310cb4ecbbd3cd56"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.start.bad.rsp",
+      "size_bytes": 81830,
+      "etag": "\"d5b0f7e2d648c3c2c47f839c618de0d5\"",
+      "sha256": "ff408aae61ac172da6c0860e198547c65c4119bb0d887d89dd0ba495b16e41bc"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.start.good.rsp",
+      "size_bytes": 77654,
+      "etag": "\"01a975f44826cd939f3dfeeab163e7f9\"",
+      "sha256": "de2120c1e30c003c86ebad81022bf8f39318b53d799c25fc41fe80be773e5453"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.track.bad.rsp",
+      "size_bytes": 54172,
+      "etag": "\"8168832efbc7f79c687013d278a5514e\"",
+      "sha256": "6a5ca6814228316a76315bafb2b54da171d92da6c765cb6d227b2383be53de29"
+    },
+    {
+      "key": "COSI-SMEX/DC2/Ancillary/BayesianResponseO64.p1.mc.track.good.rsp",
+      "size_bytes": 54154,
+      "etag": "\"0f5baa4619e9a6b9848c158fd5aa8280\"",
+      "sha256": "845af628f9d39b5dd403615af1a2559bf69103bb8f2a46d0ec2a4d0566f39446"
+    }
+  ]
+}

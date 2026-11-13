@@ -1,0 +1,13 @@
+Germanium square toy detector, 2026-11-13
+Transport: MEGAlib 4.91.00 Cosima / Geant4 11.2.2 LivermorePol; seed 42.
+Geometry: bare 5 x 5 x 2 cm germanium block, density from MEGAlib Germanium material; vacuum world, no housing or dead layer. 50 x 50 virtual strips (1 mm pitch).
+Source: 100000 unpolarized 662 keV photons, parallel along -z, uniform 2.4 cm radius disk at z=5 cm. All initial rays intersect the crystal.
+Trigger: one Ge channel above 10 keV. Energy spectrum is conditional on triggered events; non-triggered primaries are absent from SIM.
+Offline toy response: per-hit Gaussian sigma interpolated through (0 keV,0.3 keV), (662,0.85), (2000,1.4). Positions: SIM strip centers in x/y; add Gaussian sigma 0.05 cm to hit z. Response RNG seed 20261113.
+Spectrum sums hit energies after discarding hits below 5 keV in true energy; this uses a simplified threshold model. No charge collection or electronics simulation.
+Compton selection: full energy containment at truth (|ED-662|<0.01 keV); exactly one primary Compton interaction then photoelectric absorption, no intervening primary Rayleigh; exactly two HTsim hits, with separate unambiguous truth origin associations; each measured site >=10 keV; total measured within 5 keV of 662; measured separation >=0.3 cm; valid Compton cosine. This is an illustrative clean truth-selected subset, not a measured detector efficiency or full Revan reconstruction.
+COSIPY angle convention: d=(r1-r2)/|r1-r2|, psi=acos(d_z), chi=atan2(d_y,d_x); d points opposite scattered photon propagation. phi=acos(1-510.99895*(1/E2 - 1/(E1+E2))). Source is +z, hence phi approximately psi. ARM=phi-psi.
+Energy-angle plot uses phi derived from the same hit energies, so alignment with the Compton curve is a kinematic illustration, not an independent validation. ARM compares energy-derived and position-derived angles independently.
+Checks: generated-particle count from transport log; event count <=100000; truth deposited energy <=662.01 keV; Compton sample nonempty; measured two-site energies sum to event total; ARM median within 5 degrees of zero.
+Reproduce: source /workspace/.environment/activate-mega.sh; cosima -s 42 /workspace/work/ge_square/Mono662.source
+Then use Python with numpy and matplotlib: python /workspace/work/ge_square/analyze.py

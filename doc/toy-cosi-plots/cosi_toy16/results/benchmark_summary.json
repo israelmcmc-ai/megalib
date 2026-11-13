@@ -1,0 +1,42 @@
+{
+  "common_events": 14172,
+  "benchmark_hit_range": [
+    2,
+    7
+  ],
+  "truth_selected_events": 14551,
+  "excluded_from_benchmark_above_7": 379,
+  "python_truth_median_seconds": 0.21953313999983948,
+  "revan_search_median_seconds": 6.250241998,
+  "current_implementation_speedup": 28.470608118685725,
+  "cpp_truth_shortcut_median_seconds": 0.003814903815,
+  "same_language_cpp_kernel_speedup": 1638.37472741,
+  "repetitions": 5,
+  "algorithm": "MEGAlib MERCSRChiSquare classic sequence search, default simple statistic; Klein-Nishina two-hit ambiguity handling",
+  "timed": "Sequencing plus first-pair Compton quantities on identical preloaded measured hits",
+  "excluded": [
+    "transport",
+    "file input/output",
+    "detector effects",
+    "truth-origin mapping",
+    "event-object construction",
+    "clustering",
+    "electron tracking"
+  ],
+  "python_truth_us_per_event": [
+    15.518158783572028,
+    15.227050113836103,
+    16.504226558373695,
+    16.971825602368433,
+    14.499110405724913,
+    14.000493652552297
+  ],
+  "revan_us_per_event": [
+    1.4388113738738737,
+    2.6221554669703875,
+    14.711629649030908,
+    107.3424635023373,
+    746.4818039340101,
+    6572.323473906911
+  ]
+}

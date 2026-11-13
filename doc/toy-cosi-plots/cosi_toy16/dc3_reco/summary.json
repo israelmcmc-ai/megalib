@@ -1,0 +1,157 @@
+{
+  "configuration": "Same DC3 CSR=4, adjacent level=2/sigma=1.5, tracking off, max 7 sites, thresholds [0,1000], no forced start; geometry remains toy",
+  "bayesian_response": "Published COSI DC2 BayesianResponseO64.p1 tables, NOT the DC3 Response.p1 set",
+  "response_limitation": "Transfer of this COSI-trained response to the monolithic toy is an illustrative algorithm test, not validated DC3 or toy calibration",
+  "rejected_toy_training": "Native toy training had empty 6- and 7-site prior bins and nonfinite corresponding scores, so those experimental results are NOT used",
+  "photopeak_cut": false,
+  "arm_cut": false,
+  "first_pair_cuts": "First and second reconstructed sites each >=10 keV, separation >=0.3 cm, valid energy-derived Compton cosine",
+  "results": {
+    "classic": {
+      "input_events": 24817,
+      "revan_good": 24804,
+      "selected_events": 20965,
+      "selected_by_sites": {
+        "2": 4577,
+        "3": 5819,
+        "4": 5140,
+        "5": 3260,
+        "6": 1570,
+        "7": 599
+      },
+      "rejections": {
+        "first_pair_separation": 2551,
+        "first_pair_energy": 930,
+        "revan_rejected": 13,
+        "invalid_compton_cosine": 358
+      },
+      "effective_area_no_photopeak_cm2": 148.19285246064752,
+      "mc_sigma_cm2": 0.9098913848129137,
+      "truth_matched": 20952,
+      "truth_comparison": {
+        "2_sites": {
+          "events": 4569,
+          "within_5deg_pct": 24.97264171591158
+        },
+        "3to7_sites": {
+          "events": 16383,
+          "within_5deg_pct": 67.32588658975767
+        }
+      }
+    },
+    "bayes": {
+      "input_events": 24817,
+      "revan_good": 24817,
+      "selected_events": 21464,
+      "selected_by_sites": {
+        "2": 4447,
+        "3": 6076,
+        "4": 5295,
+        "5": 3417,
+        "6": 1615,
+        "7": 614
+      },
+      "rejections": {
+        "first_pair_separation": 2054,
+        "invalid_compton_cosine": 475,
+        "first_pair_energy": 824
+      },
+      "effective_area_no_photopeak_cm2": 151.72007561246548,
+      "mc_sigma_cm2": 0.9177451744304891,
+      "truth_matched": 21450,
+      "truth_comparison": {
+        "2_sites": {
+          "events": 4439,
+          "within_5deg_pct": 44.64969587744987
+        },
+        "3to7_sites": {
+          "events": 17011,
+          "within_5deg_pct": 71.70654282523074
+        }
+      }
+    }
+  },
+  "timing": {
+    "common_events": 24817,
+    "raw_events_clustered": 28543,
+    "repetitions": 5,
+    "clustering_median_s": 0.096765663000003,
+    "algorithms": {
+      "classic": {
+        "csr_median_s": 6.738853961,
+        "csr_plus_common_clustering_median_s": 6.835619624000003,
+        "csr_us_per_event": 271.54184474352263,
+        "trial_seconds": [
+          5.928877087,
+          6.738853961,
+          6.838587555999999,
+          7.053410584,
+          6.454757786999999
+        ]
+      },
+      "bayes": {
+        "csr_median_s": 17.263607927,
+        "csr_plus_common_clustering_median_s": 17.358602528000002,
+        "csr_us_per_event": 695.636375347544,
+        "trial_seconds": [
+          17.048797298,
+          16.831812874,
+          20.049088621,
+          18.253358191,
+          17.263607927
+        ]
+      }
+    },
+    "by_nsites": [
+      {
+        "n_sites": 2,
+        "events": 5393,
+        "classic_median_s": 0.01068338,
+        "classic_us_per_event": 1.9809716298905988,
+        "bayes_median_s": 0.016819995,
+        "bayes_us_per_event": 3.118856851474133
+      },
+      {
+        "n_sites": 3,
+        "events": 7052,
+        "classic_median_s": 0.024000045,
+        "classic_us_per_event": 3.40329622802042,
+        "bayes_median_s": 0.179193514,
+        "bayes_us_per_event": 25.4103111174135
+      },
+      {
+        "n_sites": 4,
+        "events": 5989,
+        "classic_median_s": 0.087828732,
+        "classic_us_per_event": 14.665007847720823,
+        "bayes_median_s": 0.899461696,
+        "bayes_us_per_event": 150.185622975455
+      },
+      {
+        "n_sites": 5,
+        "events": 3840,
+        "classic_median_s": 0.342759457,
+        "classic_us_per_event": 89.26027526041666,
+        "bayes_median_s": 3.717045799,
+        "bayes_us_per_event": 967.9806768229167
+      },
+      {
+        "n_sites": 6,
+        "events": 1828,
+        "classic_median_s": 1.197625344,
+        "classic_us_per_event": 655.1560962800875,
+        "bayes_median_s": 2.715812946,
+        "bayes_us_per_event": 1485.6744781181617
+      },
+      {
+        "n_sites": 7,
+        "events": 715,
+        "classic_median_s": 5.008575913,
+        "classic_us_per_event": 7005.001276923077,
+        "bayes_median_s": 9.953730948,
+        "bayes_us_per_event": 13921.302025174826
+      }
+    ],
+    "bayes_over_classic_csr": 2.5618017584162334
+  }
+}

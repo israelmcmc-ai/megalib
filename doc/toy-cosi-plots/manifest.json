@@ -1,0 +1,312 @@
+{
+  "created": "2026-11-13",
+  "simulation_megalib_commit": "906cd474",
+  "files": [
+    {
+      "path": "cosi_toy16/cosi-ge-bgo-plots.html",
+      "bytes": 339726,
+      "sha256": "9e55d5f8060ffecf42defe5154eaa32b6f5e40583e2cf6e1ab2ee3fa3d480295",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/cosi-multihit-compton.html",
+      "bytes": 248314,
+      "sha256": "95f46e4570000e888b2ba5ea5c32c7bcfb1fedef7be74323ed5d305d5f9d07b7",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/bayes_cds.pdf",
+      "bytes": 80858,
+      "sha256": "ed26d41f488dd8b569d03782297b330c08a9fe41ef9e2755364d336359a30100",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/bayes_cds.png",
+      "bytes": 146271,
+      "sha256": "d122613b7ea4caa7ddbca4fafc877b8ba0b53dee8a5dfdc2dd367d4e127ff2f6",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/bayesian-classic-comparison.html",
+      "bytes": 592705,
+      "sha256": "96fa3762170ab7fc8717ed2feb513d567ad27f1e1ceaae3e5c528702404038b6",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/energy_and_timing.pdf",
+      "bytes": 34597,
+      "sha256": "84bb574bce3fb32f5cd311b173ff69ca5baa16f9da1f17931e4ee5b4c3fd2f76",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/energy_and_timing.png",
+      "bytes": 154860,
+      "sha256": "ac73bafde2e6c263507df397280dd6b3e2524e80686f308c4c9c9c7641dab572",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/true_vs_reco_comparison.pdf",
+      "bytes": 221029,
+      "sha256": "0c95c10d80b00936a3dd3569acfd0b22734d4c1a840cbdc5bad4d9a635716410",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/true_vs_reco_comparison.png",
+      "bytes": 203854,
+      "sha256": "e1e93fb48e3f04c2de974a03e7f039fee493171b949194317937b18e09c1e378",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/results/compton_data_space.pdf",
+      "bytes": 78030,
+      "sha256": "3e247785b86bb5e9b267c38164f8c43a6523af3ab7d94c1b2d1cec6efc5af691",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/results/compton_data_space.png",
+      "bytes": 138161,
+      "sha256": "0c8244e325ffe2774d1dd0a94df683068e65ff469554adfb59e62be100225e63",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/results/geometry_energy_veto.pdf",
+      "bytes": 104146,
+      "sha256": "bd2e8144a91936f35732f6b7c8c2100e2ddebf548122fa0a8211b168fba4a08e",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/results/geometry_energy_veto.png",
+      "bytes": 272697,
+      "sha256": "5c93b77524b60d1d71d63df8a0087d5ff2513de738a924dc975ce46d84628201",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/results/multihit_benchmark.pdf",
+      "bytes": 31579,
+      "sha256": "c984e1465079e2ce19d512ec49b3a731854b388e8da5440031a39b8d9df2ae1d",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/results/multihit_benchmark.png",
+      "bytes": 148361,
+      "sha256": "17b5f39ddbcd81e092b87bad741a8fd435d895c79c12de109d34623caf3b97bb",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/compton_data_space.pdf",
+      "bytes": 79710,
+      "sha256": "371abb50917f00225abb9521a8c08c9a08c423c27d140360a2aec4ccc770eb3f",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/compton_data_space.png",
+      "bytes": 144347,
+      "sha256": "dba86a2449e810515edeb09704027c83999aab5a2e4611c917c2b29b086a3ecd",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/energy_and_effective_area.pdf",
+      "bytes": 40734,
+      "sha256": "c4343f1e4200d5347a165b0bd18248cc54b8e4afee40b1b5289dcb9b9598501b",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/energy_and_effective_area.png",
+      "bytes": 185649,
+      "sha256": "73b691ce0ef9875105bd43590dcdeaecc6ef56687bfbd91055e60666dfc6dbd0",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/no-photopeak-compton-plots.html",
+      "bytes": 384100,
+      "sha256": "38284b181069f7747b7bfe242eaa1b6b3a76fab4fc72ef6ec8358a7037c21c74",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/no_photopeak/compton_data_space.pdf",
+      "bytes": 80408,
+      "sha256": "38bbf5b7fb460bf506e6c34f2a90fd2533a86c0d49af6f7cfee6354ded36ae08",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/no_photopeak/compton_data_space.png",
+      "bytes": 143768,
+      "sha256": "3c7df52928f3c5b78a47a543b5b1f5e2edb7c915c2b249fef0a2a8d25f52321a",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/no_photopeak/true_vs_reco_compton.pdf",
+      "bytes": 125259,
+      "sha256": "398494b9b45ec1076089f2adf9153ae7613998b38a6b7035ab400573efe90b53",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/no_photopeak/true_vs_reco_compton.png",
+      "bytes": 156983,
+      "sha256": "5b44405b7afb99fddaada7ffd4aa114b38de5baa559ad290813f6d019e9e0b1d",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/revan-energy-cds-area.html",
+      "bytes": 301628,
+      "sha256": "859a1e89a68aa9a7393c8c621300776e2ec217d3499d48a4eb56a3280a000a7c",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/true-vs-reconstructed-compton.html",
+      "bytes": 199535,
+      "sha256": "489b95c2f85d611cfca25fe2d8ee93e65c3cae2a42df22c34ba61a83a495fecf",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/true_vs_reco_compton.pdf",
+      "bytes": 125960,
+      "sha256": "976e682f14f189db3319d2ec39341e409626e2f0106663c413341a8237054060",
+      "kind": "plot"
+    },
+    {
+      "path": "cosi_toy16/revan4/true_vs_reco_compton.png",
+      "bytes": 157151,
+      "sha256": "3419d351cd9c5b3f21c8f9719d3352cab91e2371c3bf150729df50ba70cea409",
+      "kind": "plot"
+    },
+    {
+      "path": "ge_square/germanium-plots.html",
+      "bytes": 414251,
+      "sha256": "179e92ad33e03e0c097d245e82323e52f63238f065ed8f460b8d51feee9eee67",
+      "kind": "plot"
+    },
+    {
+      "path": "ge_square/results/compton_data_space.pdf",
+      "bytes": 135118,
+      "sha256": "8c507710fb392b5b0f94ba0ddb79509a7f1cd43321be5a406c7fd280017b83bc",
+      "kind": "plot"
+    },
+    {
+      "path": "ge_square/results/compton_data_space.png",
+      "bytes": 414271,
+      "sha256": "2838c5e353553786e65c5245effa227bd622172fae0c0916ca71be20878cfc61",
+      "kind": "plot"
+    },
+    {
+      "path": "ge_square/results/detector_and_energy.pdf",
+      "bytes": 92500,
+      "sha256": "9c7264cfe937ee20e74ffe33051236fdbe069b9d4023070b775fd9ee87ebbdd8",
+      "kind": "plot"
+    },
+    {
+      "path": "ge_square/results/detector_and_energy.png",
+      "bytes": 385994,
+      "sha256": "ac4118296f0eea6c54d5ee423d0772ed65b62bff3be015c68c9ffc66c89345f7",
+      "kind": "plot"
+    },
+    {
+      "path": "ge_square/results/model_notes.txt",
+      "bytes": 2294,
+      "sha256": "6ffae9e57c239fb17e60292d06c86aacb9bf5fb2764b03a2b0f50c2b525e99e9",
+      "kind": "provenance"
+    },
+    {
+      "path": "ge_square/results/summary.json",
+      "bytes": 372,
+      "sha256": "d3a2d507c6da4141a5c6de5e2973e5b8d8fafa42c29f04d5b4028a54f7ea1d8d",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/README.txt",
+      "bytes": 8304,
+      "sha256": "88880f32d532125ab009787f25be65b2730922bf97edabcc421d4fea54833ee8",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/results/summary.json",
+      "bytes": 1565,
+      "sha256": "318626bc39992377086f6e7c0045d70b033c635c956f9e6a44c473dac80dc914",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/results/benchmark_summary.json",
+      "bytes": 1207,
+      "sha256": "d17a15286be741814646b0faa42a0c11b1ffeed536c94223c7628a2a594f5114",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/results/python_timing.json",
+      "bytes": 2001,
+      "sha256": "5be44288347009525de4341a3043d7740d8750f7ba3d94ffd0ea7b1be91c50d5",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/results/revan_timing.csv",
+      "bytes": 494,
+      "sha256": "cf14470fef2b84f1ae5037094a15da4fbbfea9056f42aac08479c1b45d1bdc63",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/revan4/README.txt",
+      "bytes": 7492,
+      "sha256": "1a1b962b26374bc7cc33f9ffd29a2f785c4468fffa22db14f37ff90d83105a3e",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/revan4/summary.json",
+      "bytes": 2284,
+      "sha256": "8b090e1fe98d62d7862507495f90f9fc8c9b222c5547d2268cbc4fb3021395e6",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/revan4/effective_area.csv",
+      "bytes": 568,
+      "sha256": "fa91c5181531ff4b2493d7aa20ea443465522a27c76bb7bc2689dd207730a1dc",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/revan4/arm_fwhm.json",
+      "bytes": 427,
+      "sha256": "db4fc9d1c35a07ec86bec452be28b5ae38719a8e2fed1ab6de90918ce38a076d",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/revan4/no_photopeak/cds_summary.json",
+      "bytes": 576,
+      "sha256": "4a461dd9e9ecceb15cc94776a02391c8e556871bf0b4a32b49c5c51a5e0f4e0f",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/revan4/no_photopeak/true_vs_reco_summary.json",
+      "bytes": 1133,
+      "sha256": "db2193ee4d5b44fe3c7da7ef1183a453724f4e24604c68bd868390234de45e38",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/README.txt",
+      "bytes": 7225,
+      "sha256": "a7ea24b6038bc0bad235f24a1d295766cd346e1dbf3c8b4aa5c837bb888141a1",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/summary.json",
+      "bytes": 4758,
+      "sha256": "8be6265029b1df14b88f789e017d2b790ede76d739adba6a3146b1aa33440a79",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/timing_summary.csv",
+      "bytes": 495,
+      "sha256": "d0f3389bb30e00c3bcc706e0948eaf7ba2e20690d42b8a723ad117b26b189b23",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/reference_dc2/manifest.json",
+      "bytes": 3625,
+      "sha256": "424674c453fd464132c14c17373aa980b14b6e31034276a582116c8507f5b12a",
+      "kind": "provenance"
+    },
+    {
+      "path": "cosi_toy16/dc3_reco/two_site_bayes_diagnosis.json",
+      "bytes": 233,
+      "sha256": "77a7aad84ec431c26f9197756ea74003552ede836278339143723e5a4287d45d",
+      "kind": "provenance"
+    }
+  ]
+}

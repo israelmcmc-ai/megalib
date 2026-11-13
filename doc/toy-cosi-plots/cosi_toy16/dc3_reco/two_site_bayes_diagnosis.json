@@ -1,0 +1,8 @@
+{
+  "sample": "Common selected two-site photopeak events, true phi 55-65 deg",
+  "events": 237,
+  "classic_within_5deg": 196,
+  "bayes_within_5deg": 0,
+  "bayes_within_5deg_swapped_branch": 160,
+  "bayes_larger_deposit_first": 225
+}
