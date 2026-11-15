@@ -1,0 +1,86 @@
+//------------------------------------------------------------
+// Detector information:
+
+
+Strip3D               D1
+
+D1.SensitiveVolume      D1_GeWafer
+D1.DetectorVolume       D1_GeWafer
+
+D1.Offset                0.0 0.0
+D1.StripNumber            64  64
+
+# COSI
+D1.EnergyResolution   Gauss      0.0      0.0  1.32
+D1.EnergyResolution   Gauss     60.0     60.0  1.32
+D1.EnergyResolution   Gauss    122.0    122.0  1.42
+D1.EnergyResolution   Gauss    365.0    365.0  1.58
+D1.EnergyResolution   Gauss    662.0    662.0  1.68
+D1.EnergyResolution   Gauss   1275.0   1275.0  1.79
+D1.EnergyResolution   Gauss   1836.0   1836.0  1.86
+
+D1.Overflow 1800
+
+# Both
+D1.DepthResolutionThreshold 20.0
+D1.DepthResolution      0.0  { 0.3 / 2.35 }
+D1.DepthResolution     20.0  { 0.3 / 2.35 }
+D1.DepthResolution     50.0  { 0.1 / 2.35 }
+D1.DepthResolution     60.0  { 0.08 / 2.35 }
+D1.DepthResolution     70.0  { 0.075 / 2.35 }
+D1.DepthResolution     80.0  { 0.065 / 2.35 }
+D1.DepthResolution    122.0  { 0.06 / 2.35 }
+D1.DepthResolution    356.0  { 0.05 / 2.35 }
+D1.DepthResolution    662.0  { 0.05 / 2.35 }
+D1.DepthResolution   1836.0  { 0.05 / 2.35 }
+
+
+# ASIC
+D1.TriggerThreshold     18
+D1.NoiseThresholdEqualsTriggerThreshold  True
+
+
+# If I go smaller it gets too slow
+D1.EnergyPerElectron 0.2
+
+# Jarred scaled to 1500 V
+D1.DriftConstant  0.007
+
+
+
+Simple GuardRingDetector
+
+GuardRingDetector.SensitiveVolume     GeWaferGuardRing
+GuardRingDetector.DetectorVolume      GeWaferGuardRing
+
+GuardRingDetector.TriggerThreshold      30
+GuardRingDetector.NoiseThresholdEqualsTriggerThreshold true
+
+GuardRingDetector.EnergyResolution Gaus 10      10        3.3
+GuardRingDetector.EnergyResolution Gaus 20      20        3.3
+GuardRingDetector.EnergyResolution Gaus 50      50        3.3
+GuardRingDetector.EnergyResolution Gaus 100     100       3.3
+GuardRingDetector.EnergyResolution Gaus 200     200       3.3
+GuardRingDetector.EnergyResolution Gaus 500     500       3.3
+GuardRingDetector.EnergyResolution Gaus 1000    1000      3.3
+GuardRingDetector.EnergyResolution Gaus 2000    2000      3.3
+GuardRingDetector.EnergyResolution Gaus 5000    5000      3.3
+
+
+
+#------------------------------------------------------------
+# Trigger information:
+
+Trigger GeTrigger
+GeTrigger.Detector D1 1
+GeTrigger.TriggerByChannel true
+GeTrigger.Veto false
+
+
+Trigger GuardRingVeto
+GuardRingVeto.Veto true
+GuardRingVeto.TriggerByChannel true
+GuardRingVeto.Detector GuardRingDetector 1
+
+
+

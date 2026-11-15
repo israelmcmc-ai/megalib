@@ -1,0 +1,12 @@
+Version 1
+Geometry /workspace/work/massmodel-cosi-dc3/COSISMEX.sim.geo.setup
+PhysicsListEM LivermorePol
+StoreSimulationInfo all
+Run OnAxis
+OnAxis.FileName /workspace/work/1MeV_B
+OnAxis.Events 1000000
+OnAxis.Source Photons
+Photons.ParticleType 1
+Photons.Beam FarFieldPointSource 0 0
+Photons.Spectrum Mono 1000
+Photons.Flux 1.0

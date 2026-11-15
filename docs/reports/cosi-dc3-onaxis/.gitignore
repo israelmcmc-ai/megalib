@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+results/*.html
+reproduction/
+!runs/*.gz
+!runs/auxiliary/*.gz
+!results/*.gz
+!inputs/dc3/Revan/*.rsp

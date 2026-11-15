@@ -1,0 +1,35 @@
+{
+  "energies_keV": [
+    300,
+    1000,
+    3000
+  ],
+  "photons_per_energy": 1000000,
+  "cosima_seeds": [
+    30101,
+    100101,
+    300101
+  ],
+  "beam": "FarFieldPointSource 0 0; incident photon direction (0,0,-1)",
+  "physics": "LivermorePol",
+  "simulation_geometry": "COSISMEX.sim.geo.setup",
+  "analysis_geometry": "COSISMEX.analysis.geo.setup",
+  "configuration": "SMEXv12.Continuum.HEALPixO3.binnedimaging.revan.cfg with local BayesianComptonFile path; -f and -g override legacy paths",
+  "reconstruction": "Revan DC3 Bayesian; CSRAlgorithm=4; HitClusteringAlgorithm=2",
+  "selection": "MFileEventsTra reader: type Compton and IsGoodEvent(); match SIM event ID; require primary-photon COMP truth",
+  "reconstructed_angle": "MEGAlib MComptonEvent.Phi() in degrees; no independent reconstruction",
+  "true_angle": "Angle between primary photon incoming and outgoing directions at its first COMP interaction, including passive material; geometric scattering angle, not energy-inferred angle",
+  "direct_subset": "First primary photon interaction is COMP and DetectorType=3 (active germanium)",
+  "energy_window": "None; includes incomplete-energy deposition events",
+  "atmosphere_or_background": "None added",
+  "histogram": "2 degree by 2 degree bins; log counts",
+  "software": "MEGAlib 4.91.00; ROOT 6.38.04; Geant4 11.2.2",
+  "commits": {
+    "megalib": "906cd47428f7fd02df4564b5e61e46cb2949c89f",
+    "massmodel-cosi-dc3": "09d6feee24c9afb83a4602f1cd58fdf5f6c6f0e7",
+    "cosi-sim": "6a6c0b3432ec2e1af23a141f5a5df3f3b10cd85f"
+  },
+  "original_working_directory": "/workspace/work",
+  "reconstruction_randomness": "Cosima seeds were explicitly set. No independent Revan random seed was recorded; reproduce the exact archived selection from the saved TRA files.",
+  "raw_file_headers": "Saved SIM/TRA Date headers read 1970-01-01; run provenance comes from this report and retained logs, not those Date fields."
+}

@@ -1,0 +1,14 @@
+{
+  "300keV": {
+    "two_hits": 2783,
+    "more_than_two_hits": 1166
+  },
+  "1MeV_A": {
+    "two_hits": 1502,
+    "more_than_two_hits": 1561
+  },
+  "3MeV": {
+    "two_hits": 721,
+    "more_than_two_hits": 893
+  }
+}

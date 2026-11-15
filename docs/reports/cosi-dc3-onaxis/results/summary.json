@@ -1,0 +1,32 @@
+{
+  "300keV": {
+    "stored_sim_events": 12300,
+    "revan_compton_records": 4099,
+    "plotted_compton_events": 3949,
+    "good_records_without_primary_compton": 5,
+    "records_failing_megalib_IsGoodEvent": 145,
+    "direct_first_compton_in_ge": 3222,
+    "median_residual_deg": 1.8873387743376497,
+    "absolute_residual_68_percentile_deg": 27.11169165679363
+  },
+  "1MeV_A": {
+    "stored_sim_events": 10955,
+    "revan_compton_records": 3228,
+    "plotted_compton_events": 3063,
+    "good_records_without_primary_compton": 4,
+    "records_failing_megalib_IsGoodEvent": 161,
+    "direct_first_compton_in_ge": 2421,
+    "median_residual_deg": 0.887607939813762,
+    "absolute_residual_68_percentile_deg": 41.1163691301031
+  },
+  "3MeV": {
+    "stored_sim_events": 9480,
+    "revan_compton_records": 1902,
+    "plotted_compton_events": 1614,
+    "good_records_without_primary_compton": 184,
+    "records_failing_megalib_IsGoodEvent": 104,
+    "direct_first_compton_in_ge": 1265,
+    "median_residual_deg": -0.18297127013663506,
+    "absolute_residual_68_percentile_deg": 47.35204952947873
+  }
+}

@@ -1,0 +1,501 @@
+{
+  "algorithm": "sha256",
+  "files": {
+    ".gitattributes": {
+      "bytes": 169,
+      "sha256": "48728bdd2d96b248d14fb8b8218ff7d59eb4f34b8baecf612916aa40ad244748"
+    },
+    ".gitignore": {
+      "bytes": 118,
+      "sha256": "bf6cf30f7020abde5cd2fe03d4b468aa803bf4791cbaefd5db2a8172bcf2bfc4"
+    },
+    "AGENTS.md": {
+      "bytes": 1002,
+      "sha256": "3ddae99f8ee0ef06448ae99505d93cc75d095cdef35cec1f15f5e849fe8a9d2a"
+    },
+    "README.md": {
+      "bytes": 15823,
+      "sha256": "cd078d8556a5289f001c102111271d356be8dbf5eba649240433df993a5df519"
+    },
+    "analysis/analyze.py": {
+      "bytes": 5203,
+      "sha256": "845a90b167697186ca9d8b6b54f96ea0deb6187e27b78c5278927dcc96ea24a3"
+    },
+    "analysis/paths.py": {
+      "bytes": 647,
+      "sha256": "77c25ce3bd09f762280ea8998dfea225e72a99011cb312384dfc57d77f46e656"
+    },
+    "analysis/plot_geometric_phi.py": {
+      "bytes": 4945,
+      "sha256": "aa0375283da39a60c13fd63c1429942930b9705328326ec480bfc0d703f4dcad"
+    },
+    "analysis/plot_hit_split.py": {
+      "bytes": 2821,
+      "sha256": "ed5d3530c2ed44a94994a9ead73be45380529a6ad56148fc4b9bf7b9944c9de1"
+    },
+    "analysis/plot_klein_nishina.py": {
+      "bytes": 4359,
+      "sha256": "233ab2fb6e0fae78d6a52287d5e12e6f560f127bb9aae902e3ad94e44a483808"
+    },
+    "analysis/plot_phi_relative_loss.py": {
+      "bytes": 4164,
+      "sha256": "2714394b107ad6583c0baea28e18324137a4dd13df3978892164cd08c09f7622"
+    },
+    "analysis/regenerate.sh": {
+      "bytes": 381,
+      "sha256": "f7659c354a5700bfac6c38eae7c07ddd1e3ffd5dbe4d65b18fc8d61c07de960a"
+    },
+    "analysis/run_simulation.sh": {
+      "bytes": 2067,
+      "sha256": "a8bfa2b6fd25e9323676ff8e70741f75475854088514107bae8f2cb94f226152"
+    },
+    "analysis/verify_artifacts.py": {
+      "bytes": 3764,
+      "sha256": "8f77f860170f5a9e98b7a5361c176e66c7dc98893bb397e76412065f2612c844"
+    },
+    "inputs/dc3/README.md": {
+      "bytes": 206,
+      "sha256": "c1fde76b4cb0a05ac399fefa2a6114d9638272850b739e4c6eb59ada83a66ee5"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.compton.bad.rsp": {
+      "bytes": 1626974,
+      "sha256": "073aceafdf9a1a523361d42c5c312aa155b52fd9dc5ff90d5920ece574b564f9"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.compton.good.rsp": {
+      "bytes": 1491989,
+      "sha256": "770ebaa739c9a233648a47b0a58add241d2ea1d332f8b1e5e53ef48186e555c4"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.comptondistance.bad.rsp": {
+      "bytes": 136685,
+      "sha256": "e515e5c4cc6dbfed2fc007e61c50e701e0cc24b49986432035cc63a56beea5a3"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.comptondistance.good.rsp": {
+      "bytes": 122074,
+      "sha256": "59e540e2bdb985aae2df355403e65668aecc917a1c3a951557f414f9b7e11442"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.dual.bad.rsp": {
+      "bytes": 112422,
+      "sha256": "9d9940cb5960f04dd3e5862f0705b6a205ca36b4d0c511d65eb8ca29d49a5ff9"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.dual.good.rsp": {
+      "bytes": 104861,
+      "sha256": "0479ee5ccf74bd1b498fcab926983868e6848b1e424e7127cd9ecf2bc6b8f72c"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.goodbad.rsp": {
+      "bytes": 544,
+      "sha256": "f03f4040fdb42ef27ebfb1178cae1646adac4dd186d440e8daabfd37ec436501"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.photodistance.bad.rsp": {
+      "bytes": 123534,
+      "sha256": "f9dcf7c6a57824737df5267074bc28637dabe8cea2582c501aad712787d99026"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.photodistance.good.rsp": {
+      "bytes": 116744,
+      "sha256": "4db1d369f2afe2958ca76cbbe0ce9fa57bd442f87d922d881f0751336f6c3916"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.start.bad.rsp": {
+      "bytes": 89436,
+      "sha256": "cb5271c15e570a244820bc4970c1e22836cbfed121484010a62f6288e6d386d4"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.start.good.rsp": {
+      "bytes": 81954,
+      "sha256": "6a188e0ff630b73da7283d0f5e5751614d15f2c3f148ea95c37d3f301ac71035"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.track.bad.rsp": {
+      "bytes": 83026,
+      "sha256": "0c8e9f3349218baa9296db31acfeb6ff2254ffc98aaabbdfcb451c7212fa9183"
+    },
+    "inputs/dc3/Revan/Response.p1.mc.track.good.rsp": {
+      "bytes": 83008,
+      "sha256": "ae4354b9a0c14d5d7918806bc5a350dac13d36f6748f736f76c22c34b5226ffd"
+    },
+    "inputs/dc3/SMEXv12.Continuum.HEALPixO3.binnedimaging.mimrec.cfg": {
+      "bytes": 10558,
+      "sha256": "a49526ab18c5718100bbb0e902b31efedea94ac1fc6f306d7defd0cf48bfae7d"
+    },
+    "inputs/dc3/SMEXv12.Continuum.HEALPixO3.binnedimaging.revan.cfg": {
+      "bytes": 5173,
+      "sha256": "34315de0ec8aba91ca59b3ed705cc3558d3fb1fdcd89f969f3c2413f2963ab7c"
+    },
+    "inputs/dc3/UPSTREAM_LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "inputs/massmodel/COSISMEX.ACS.geo": {
+      "bytes": 64673,
+      "sha256": "6d6b2d2f8beef6b5a8dac1fe54823045100376f3a5222c919b10c73cae46421f"
+    },
+    "inputs/massmodel/COSISMEX.BGO.det": {
+      "bytes": 8543,
+      "sha256": "fa4f154a39832f1e0b2bc8b8d2db6b98513e853116e5fc2cc365c1bb18017341"
+    },
+    "inputs/massmodel/COSISMEX.BGO_activated.det": {
+      "bytes": 8557,
+      "sha256": "5baf7515e59e8f6925be8f44ba2fcb348d3db8adce50b299caf1d288fa9db06b"
+    },
+    "inputs/massmodel/COSISMEX.ClassicDEE.geo.setup": {
+      "bytes": 11089,
+      "sha256": "d183dfc7607e25b99948d8b9cae3bcab39c19161602dc693f2bca69b83837371"
+    },
+    "inputs/massmodel/COSISMEX.Cryocooler.geo": {
+      "bytes": 4338,
+      "sha256": "21f1bcad51dafedae024fe543819c0ebedceb3fd39ebed0bf71d5946b5d48213"
+    },
+    "inputs/massmodel/COSISMEX.CryocoolerBox.geo": {
+      "bytes": 4674,
+      "sha256": "6254a107388ccc18e761aa81b34a08e22dc96ca4c1887633ddbf0723a2cee792"
+    },
+    "inputs/massmodel/COSISMEX.Cryostat.geo": {
+      "bytes": 50690,
+      "sha256": "b2f34a64fd740ea9e203d7452e3a132322b9b5c8b4c208878a2f6e2d4d54515e"
+    },
+    "inputs/massmodel/COSISMEX.Ge.ClassicDEE.det": {
+      "bytes": 2206,
+      "sha256": "41cd663f45dffec88c55f33462de9a625d490b25ef355f55183ad46b2cb609f7"
+    },
+    "inputs/massmodel/COSISMEX.Ge.Holder.copy.geo": {
+      "bytes": 9641,
+      "sha256": "c7ed2b08a55c5187080d81af5b248a54c9326e1abdbf1722d148bc4847d309d3"
+    },
+    "inputs/massmodel/COSISMEX.Ge.Holder.geo": {
+      "bytes": 9641,
+      "sha256": "c7ed2b08a55c5187080d81af5b248a54c9326e1abdbf1722d148bc4847d309d3"
+    },
+    "inputs/massmodel/COSISMEX.Ge.O64.det": {
+      "bytes": 2444,
+      "sha256": "091a4704249dec4fc5a066aa383faadebe9b1080ef39746f1acbb265fb817d53"
+    },
+    "inputs/massmodel/COSISMEX.Ge.SimsOnly.det": {
+      "bytes": 2375,
+      "sha256": "c3c91276a9de5ed5e8a16da8e6272a2c364fef4db177523a66b85e89134c6248"
+    },
+    "inputs/massmodel/COSISMEX.Ge.SimsOnly_noGuardringVeto.det": {
+      "bytes": 2376,
+      "sha256": "ddb70bf3e0f01ef8b17c56376d2f822a26ffe9c9f493567e0853bc27c269484f"
+    },
+    "inputs/massmodel/COSISMEX.Ge.geo": {
+      "bytes": 26193,
+      "sha256": "9cc6c043e02fdd1fd65b2cc0c1938b6626551cd4f7e2dee947cc6272b1cfc236"
+    },
+    "inputs/massmodel/COSISMEX.GlobalDimensions.geo": {
+      "bytes": 18894,
+      "sha256": "5d385f988531ba74fddbba80dc6559324fcdb26fab96208bf63e9daa900afef9"
+    },
+    "inputs/massmodel/COSISMEX.InvisCryo.geo": {
+      "bytes": 48449,
+      "sha256": "a2ecc6dc165c23ca23af16190a635e6462f80ae272f5f7bb2558c03dc93c4bbf"
+    },
+    "inputs/massmodel/COSISMEX.PIP.geo": {
+      "bytes": 19037,
+      "sha256": "1c65c9927b0e8d6676b7ea6a526e6f816a520f6249f30f8cde3fda3a110fd94a"
+    },
+    "inputs/massmodel/COSISMEX.SolarPanels.geo": {
+      "bytes": 3066,
+      "sha256": "2a636cf0c3ad3c2ba312ade0f2f4afb6f8c88bfd7c9ed6256ece64ee69a1a79a"
+    },
+    "inputs/massmodel/COSISMEX.Spacecraft.bb.geo": {
+      "bytes": 11250,
+      "sha256": "5a33a30718d6e4018694c081f37464035d028b381563ed29c02a49488922344b"
+    },
+    "inputs/massmodel/COSISMEX.Spacecraft.geo": {
+      "bytes": 5861,
+      "sha256": "61e361bec1aa251752c305f78b5b6d267ab35720aea7c74d03baea55a0824209"
+    },
+    "inputs/massmodel/COSISMEX.Spacecraft.mat": {
+      "bytes": 6796,
+      "sha256": "cd8b536bca4454584906cf893559d9be7337a3d4e1f8745a6924c8d1da173c81"
+    },
+    "inputs/massmodel/COSISMEX.Telescope.geo": {
+      "bytes": 11195,
+      "sha256": "c37903ea1ae49f066f825ce16d9886e546df802fdd052bb274cebaf82fd37239"
+    },
+    "inputs/massmodel/COSISMEX.analysis.geo.setup": {
+      "bytes": 11190,
+      "sha256": "9942f9e454cd27e1a65a7dc6bb046487a3f4171e3600fa0ec84a6ac6a0b365b0"
+    },
+    "inputs/massmodel/COSISMEX.analysis_BGOreading.geo.setup": {
+      "bytes": 11068,
+      "sha256": "944d7a837dfb21f789e6647dbc85274c4e60a395323f35ae7997a8455ab146aa"
+    },
+    "inputs/massmodel/COSISMEX.det": {
+      "bytes": 3334,
+      "sha256": "97b73154998aa80dbae6a0c7796e944e0c2b20c464646f9ab5b197f04aae9abb"
+    },
+    "inputs/massmodel/COSISMEX.mat": {
+      "bytes": 12311,
+      "sha256": "b75763fb22765da42d5bc0f6fffaa4bc56fd230c140cefaff5b0ea207c4fbd7b"
+    },
+    "inputs/massmodel/COSISMEX.sim.geo.setup": {
+      "bytes": 11195,
+      "sha256": "5862611a3128ccd88b9b9b874aee7a655855eed94f144e620fb65b76912bcf55"
+    },
+    "inputs/massmodel/COSISMEX.sim_BGOreading.geo.setup": {
+      "bytes": 11221,
+      "sha256": "87b56e8e0277d20bd0c4959bfb649210342e2f61065a26791df23a01fa00364f"
+    },
+    "inputs/massmodel/EffectiveArea.source": {
+      "bytes": 826,
+      "sha256": "8a394fdb1d68db6f1ff8d4ed0602042c2a38c53b170fc7534b1b4787b185de13"
+    },
+    "inputs/massmodel/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "inputs/massmodel/README.md": {
+      "bytes": 44,
+      "sha256": "7d1200c0feee16738298fb29e8f9ecf37e667d7ad955c969afe0af1b70623127"
+    },
+    "inputs/massmodel/Testing/EffectiveArea.ClassicDEE.source": {
+      "bytes": 700,
+      "sha256": "afdf01662ed1330eca85ca4863f952654939030e543b774f4f91fa1741aaa2fe"
+    },
+    "inputs/massmodel/Testing/EffectiveArea.source": {
+      "bytes": 678,
+      "sha256": "e00cbe4bbfd941764e80fb2df18a97f75d579c71a907ff8ee4706313f53331da"
+    },
+    "inputs/massmodel/Testing/Revan.cfg": {
+      "bytes": 7858,
+      "sha256": "b39e1cbe514b50654179912a7d9dfb03ed67a2e12ef40df259a4a3be40e6cb47"
+    },
+    "inputs/massmodel/ViewACS.geo.setup": {
+      "bytes": 617,
+      "sha256": "60f89237a791c6712bc51b5d7608cd03e5b5268b9435d3d59746b54d15a1004c"
+    },
+    "inputs/massmodel/ViewAll.geo.setup": {
+      "bytes": 27,
+      "sha256": "bc6ef971e16289353ef000df3c804ce74a7930060ce9ca2d86b1193525fca6d1"
+    },
+    "inputs/massmodel/ViewCryostat.geo.setup": {
+      "bytes": 1604,
+      "sha256": "b8b94a74785482fd4ed46cade28503517cad663f8057c73d79b51b3aec2d1f9d"
+    },
+    "inputs/massmodel/ViewDetectorHead.geo.setup": {
+      "bytes": 744,
+      "sha256": "a19c2cb08073a182bbacbeb368b82c3c721e409377040e16267a57be280efcb7"
+    },
+    "inputs/massmodel/ViewIRShield.geo.setup": {
+      "bytes": 1604,
+      "sha256": "e77a9e12307ec88b111e23c311969461f3e6fc1722b4c91f811ec4bb624de6b2"
+    },
+    "inputs/massmodel/ViewOneGermaniumDetector.geo.setup": {
+      "bytes": 600,
+      "sha256": "759df2f218b1b2f55bcfc967558219e2ce2bef69447743a3815cb22b2fbd71bc"
+    },
+    "inputs/massmodel/ViewPIP.bb.geo.setup": {
+      "bytes": 1675,
+      "sha256": "f06f56906dbada948738d8d371685c528e77a595ac311707bccb66623a802ea0"
+    },
+    "inputs/massmodel/ViewSpaceCraft.aj.geo.setup": {
+      "bytes": 708,
+      "sha256": "fc688db58fb7b214754f72f603e4241d32b19c9222bea9d822a327e179f2b29c"
+    },
+    "inputs/massmodel/ViewSpaceCraft.bb.geo.setup": {
+      "bytes": 745,
+      "sha256": "d76e2d95e353135571358f79e7dc06c43d76bcb00018a904ce1806c4bda913f3"
+    },
+    "inputs/massmodel/ViewSpaceCraft.geo.setup": {
+      "bytes": 705,
+      "sha256": "4dc5670573eab0740d8ea08b242374111d24f1ca6e8a1e47cf846349b9417692"
+    },
+    "results/1MeV_A.angles.csv.gz": {
+      "bytes": 92767,
+      "sha256": "23d3366694983223f64890b3ea401cc200193bb66bf459d78a7b173bcc3284d5"
+    },
+    "results/1MeV_A.geometric_angles.csv.gz": {
+      "bytes": 93119,
+      "sha256": "ac12c9f54630199265fd72fddc690268944beb2378c92fdf7957308ee0423279"
+    },
+    "results/300keV.angles.csv.gz": {
+      "bytes": 117442,
+      "sha256": "60f250d02a556b5a4031f0701d4d6540e335f5e421142b2998f3aaec0d4d284e"
+    },
+    "results/300keV.geometric_angles.csv.gz": {
+      "bytes": 118842,
+      "sha256": "4a54fb24b1b6ed24a41a466a77774e8f18e6ccaa110e819b6462a2ad1a7a81d1"
+    },
+    "results/3MeV.angles.csv.gz": {
+      "bytes": 50433,
+      "sha256": "1c0d32559ca07daa9998cbb9cb499ad948d197e7029db02956d4873bcd9b96d0"
+    },
+    "results/3MeV.geometric_angles.csv.gz": {
+      "bytes": 49827,
+      "sha256": "11fab2bc16a1d90cfba223eb1f2524937881308032869ea1360fa1c918d33b0a"
+    },
+    "results/compton_angle_density.pdf": {
+      "bytes": 610327,
+      "sha256": "8e2fab6c7a388cccd77bc275084e1bc0fabc24c771a178939cc93e41c795a6f8"
+    },
+    "results/compton_angle_density.png": {
+      "bytes": 296225,
+      "sha256": "c993e4b712989e94ca29009497e4eb2ceac1e07e574e2718113b3ab5534a8fae"
+    },
+    "results/compton_angle_hit_split.pdf": {
+      "bytes": 595077,
+      "sha256": "e5977c86edd57bf112b5cb3eaca6f3ce5e249e0da621ecd657eeb438f1d058bd"
+    },
+    "results/compton_angle_hit_split.png": {
+      "bytes": 274526,
+      "sha256": "4be8b60436ad301325416fac75ba586295c96559f7119c4447467cbb59b7052e"
+    },
+    "results/geometric_phi_summary.json": {
+      "bytes": 364,
+      "sha256": "2e67eaf1e1303e80ec8d7a58ae28208bcbb9ff47b2181096c874d6417589d4b3"
+    },
+    "results/hit_split_counts.json": {
+      "bytes": 214,
+      "sha256": "4b3ea1c5c5de6611f1db564a6646eaa012005f7dc67ac4b8fcf1f84c8432af93"
+    },
+    "results/kinematic-vs-geometric-phi.pdf": {
+      "bytes": 597182,
+      "sha256": "6e5f5a39632187585cc85fbba2a8290715095b124bc28bc6bf171d7dd6729a4e"
+    },
+    "results/kinematic-vs-geometric-phi.png": {
+      "bytes": 275084,
+      "sha256": "820502985893be49c85f49b072489c5c5743a017cc3257c9105fd56353d6688e"
+    },
+    "results/methods.json": {
+      "bytes": 1925,
+      "sha256": "85ca2524d377a04b7b5d02d87d085b287fbc9ee735ca9cbc4a1d0422acd1866e"
+    },
+    "results/phi_klein_nishina.pdf": {
+      "bytes": 31388,
+      "sha256": "4ca4f88591a23bd8517125bdb0a79b88c01fed782df7f3bd402f4dc4534de051"
+    },
+    "results/phi_klein_nishina.png": {
+      "bytes": 342722,
+      "sha256": "b14bc913fd52ef9cb23d98ad44868aceb678258a05a7695bdd7b5748b4100750"
+    },
+    "results/phi_klein_nishina_data.json": {
+      "bytes": 23828,
+      "sha256": "4d9b0ea4636b8e68b7c3d362123cb30c5d8b605982dd566a8a2929e78aab7233"
+    },
+    "results/phi_relative_loss.pdf": {
+      "bytes": 32231,
+      "sha256": "a361343f615b48943a4567cfec103f492d6d063010765df00998962b22373189"
+    },
+    "results/phi_relative_loss.png": {
+      "bytes": 236543,
+      "sha256": "aabbc5a6eaa75fe9b2fcb0c57b8481d7ecf72836142b0a10a0db9b7d9b688870"
+    },
+    "results/phi_relative_loss_scaling.json": {
+      "bytes": 17100,
+      "sha256": "9fe45ac90af3ff98668655c48a48fe47f18652ee9c6d7530709c3823e1f913af"
+    },
+    "results/summary.json": {
+      "bytes": 1096,
+      "sha256": "5976969a000e433540e82d7218350b820ef06b73be34efc9b6113bb34b9d9127"
+    },
+    "results/true-vs-geometric-phi.pdf": {
+      "bytes": 597951,
+      "sha256": "22f4b6591d251b7dd2f65d6c9d2ef6096475f2d344c1256efaa5d9948f7af263"
+    },
+    "results/true-vs-geometric-phi.png": {
+      "bytes": 273416,
+      "sha256": "9caa38f02e00e90e2c9077ba892af8257b15ea3004ab57254acfa920ebe50500"
+    },
+    "runs/1MeV_A.cosima.log.gz": {
+      "bytes": 1955117,
+      "sha256": "33b80cd7271b4664d13b7aa3e620995ecbcd6bb56dd4ded5f5c0e2bb9217aab5"
+    },
+    "runs/1MeV_A.inc1.id1.sim.gz": {
+      "bytes": 6405435,
+      "sha256": "18bfbc32d9f63b60eb9d8d5053908ab3e21302de8787c67bdb142c9126290f85"
+    },
+    "runs/1MeV_A.revan.log.gz": {
+      "bytes": 1725,
+      "sha256": "40c0091e2ef293825236a8b6b2ab5195534dc27daaa31deed43c40a026e721a3"
+    },
+    "runs/1MeV_A.source": {
+      "bytes": 326,
+      "sha256": "3360e158944ff6ed83f58c61ea045351d357cc725cf4aa133691da5faccf9929"
+    },
+    "runs/1MeV_A.tra.gz": {
+      "bytes": 441141,
+      "sha256": "9ea9f3c1c3d573f5fc854438aa06420b27fe61e49c6c65544b73b5126778532f"
+    },
+    "runs/300keV.cosima.log.gz": {
+      "bytes": 1207937,
+      "sha256": "2a05c70a1c82992839f891ca3faaf2f1a6d95c3448dd050336f132387a210158"
+    },
+    "runs/300keV.inc1.id1.sim.gz": {
+      "bytes": 4464380,
+      "sha256": "92de931e98a8f774c7a0c0c820bbc4e639daf50c133c0145d28150c442f02e75"
+    },
+    "runs/300keV.revan.log.gz": {
+      "bytes": 1731,
+      "sha256": "b52f363b6a817534bb1de74c66ec478a8d233eeaca4fa8dfc0e15874f31ba622"
+    },
+    "runs/300keV.source": {
+      "bytes": 325,
+      "sha256": "b263b626d9ba4a58f346a5a52ecf96e382cbb6861c7812455cd423c0e907947a"
+    },
+    "runs/300keV.tra.gz": {
+      "bytes": 574974,
+      "sha256": "457644019217bb0a7f879ace42bc995b1d1caee60857434309c7e36171bf1369"
+    },
+    "runs/3MeV.cosima.log.gz": {
+      "bytes": 3563754,
+      "sha256": "e13abc354faa29280de71d5b1fa91d06b651d5dfc912998b0e2881d56e6dd4da"
+    },
+    "runs/3MeV.inc1.id1.sim.gz": {
+      "bytes": 9901635,
+      "sha256": "cfe2a67d82a5a2de09d611503d1d2b44955ecfaaa8993e6eadb6c9708f7317f3"
+    },
+    "runs/3MeV.revan.log.gz": {
+      "bytes": 1739,
+      "sha256": "eeee5e61ab9bd1a73b3a257e49e755b82e0f262c4689824f502d0874505e7482"
+    },
+    "runs/3MeV.source": {
+      "bytes": 324,
+      "sha256": "03c116efd76d3890cb552f0f3730aa19f2c40acb8cc4a81330d303e262b9e5fa"
+    },
+    "runs/3MeV.tra.gz": {
+      "bytes": 268686,
+      "sha256": "dcaa622a07173bcc0d034c1d06a64146f49f65bf9236fbc461622c7ea99eaf8f"
+    },
+    "runs/auxiliary/1MeV_B.cosima.log.gz": {
+      "bytes": 1932999,
+      "sha256": "bf2f8ce960fd8318cc65a1186444734be78b0ffdd1dc0a402d2998236e136a91"
+    },
+    "runs/auxiliary/1MeV_B.inc1.id1.sim.gz": {
+      "bytes": 6278680,
+      "sha256": "1e2c11dca968bad73cbea58a1a412965f24569bf1c03d7426520089e6645f720"
+    },
+    "runs/auxiliary/1MeV_B.revan.log.gz": {
+      "bytes": 1727,
+      "sha256": "4e2f1e2e366b4ed27faeab384488ae803755f589f0367c1b961cb95dd8e647e8"
+    },
+    "runs/auxiliary/1MeV_B.source": {
+      "bytes": 326,
+      "sha256": "8631e6b0843efad95ca32948d03d48b92846d754a63732c9ec4905a7dbf286ca"
+    },
+    "runs/auxiliary/1MeV_B.tra.gz": {
+      "bytes": 432193,
+      "sha256": "991784f1a7f61f133e9c0e7ce339e4a140447de61f9e1434ecd49efee4b565cd"
+    },
+    "runs/auxiliary/pilot.cosima.log.gz": {
+      "bytes": 18433,
+      "sha256": "3aec33b7bdd7276e3cf664fa92fa3e60298e3f9c27c649bba504c686b6f16a73"
+    },
+    "runs/auxiliary/pilot.inc1.id1.sim.gz": {
+      "bytes": 46425,
+      "sha256": "c3cdeeaf922babb03d8d9bb731bd987eec3a40ec00ba02c668f9b8d125a61615"
+    },
+    "runs/auxiliary/pilot.revan.log.gz": {
+      "bytes": 2846,
+      "sha256": "3105acba876d7061dbe45c03fe9d91a7ec3943b3b77cfb46a53f8bf646571c4d"
+    },
+    "runs/auxiliary/pilot.source": {
+      "bytes": 322,
+      "sha256": "d62c86abc17eb86ba2d5cc6cbd50e6abc0b1dd4b9448b63d0a706b7376e768e9"
+    },
+    "runs/auxiliary/pilot.tra.gz": {
+      "bytes": 7900,
+      "sha256": "0e9a9dfa0779e9a5b6e6a40dc959e974bacdbdfb20fd8e35aacc7e30b8971d58"
+    },
+    "runs/original-effective.revan.cfg": {
+      "bytes": 5201,
+      "sha256": "df7689e351a3fa3027574e244081c5ce7fe0d80c4c540d21d0940d4fe4fd28d6"
+    }
+  }
+}
