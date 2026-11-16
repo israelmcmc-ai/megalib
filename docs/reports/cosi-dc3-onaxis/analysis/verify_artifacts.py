@@ -23,6 +23,7 @@ def verify_tables():
     kn=json.loads((RESULTS/'phi_klein_nishina_data.json').read_text())
     losses=json.loads((RESULTS/'phi_relative_loss_scaling.json').read_text())
     low_phi=json.loads((RESULTS/'low_phi_summary.json').read_text())
+    ambiguous_summary=json.loads((RESULTS/'ambiguous_two_hit_summary.json').read_text())
     assert math.isclose(low_phi['common_cut_deg'],2*math.degrees(math.asin(510.99895/2000)),abs_tol=1e-12)
     for name,s in summaries.items():
         with gzip.open(RESULTS/f'{name}.angles.csv.gz','rt') as f:
@@ -67,6 +68,13 @@ def verify_tables():
         assert len(ambiguous)==choices['both_orders_physical']
         assert len(photo_ambiguous)==choices['photopeak_both_orders_physical']
         assert sum(r['larger_first_deposit']=='True' for r in photo_ambiguous)==choices['photopeak_both_orders_physical_larger_first']
+        with gzip.open(RESULTS/f'{name}.ambiguous_two_hit.csv.gz','rt') as f:
+            saved_ambiguous=list(csv.DictReader(f))
+        expected_ids={int(r['event_id']) for r in ambiguous}
+        assert {int(r['event_id']) for r in saved_ambiguous}==expected_ids,name
+        assert len(saved_ambiguous)==len(ambiguous)==ambiguous_summary['energies'][name]['ambiguous_two_hit_events'],name
+        assert set(ambiguous_summary['energies'][name]['event_ids'])==expected_ids,name
+        assert all(int(r['reconstructed_hits'])==2 and r['reverse_order_physical']=='True' for r in saved_ambiguous),name
     for path in (REPORT/'runs').rglob('*.gz'):
         with gzip.open(path,'rb') as f:
             while f.read(1024*1024): pass

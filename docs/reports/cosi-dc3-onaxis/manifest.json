@@ -14,8 +14,8 @@
       "sha256": "3ddae99f8ee0ef06448ae99505d93cc75d095cdef35cec1f15f5e849fe8a9d2a"
     },
     "README.md": {
-      "bytes": 24372,
-      "sha256": "21bb54af551f9935c4ed5bee9137fae80d6cf2bd7791acf5484cebcad6d1e568"
+      "bytes": 26301,
+      "sha256": "402d36f6388c3a35c4c5b6f284f5b9a2dcacf8f7a4262f9b800fdd99f5e49602"
     },
     "analysis/analyze.py": {
       "bytes": 5203,
@@ -24,6 +24,10 @@
     "analysis/paths.py": {
       "bytes": 647,
       "sha256": "77c25ce3bd09f762280ea8998dfea225e72a99011cb312384dfc57d77f46e656"
+    },
+    "analysis/plot_ambiguous_two_hit.py": {
+      "bytes": 4245,
+      "sha256": "5e826453552c3897cd3adb61021885cea034100e4769987a5291494a2afa2497"
     },
     "analysis/plot_geometric_phi.py": {
       "bytes": 4945,
@@ -42,8 +46,8 @@
       "sha256": "2714394b107ad6583c0baea28e18324137a4dd13df3978892164cd08c09f7622"
     },
     "analysis/regenerate.sh": {
-      "bytes": 428,
-      "sha256": "3e076a1b2fa4cf508f0e9a199423a9443bccbcbdce423abf5bdff14a48136e50"
+      "bytes": 484,
+      "sha256": "58856b3da02a95d5dafd6da8615630e283d69fe75a3b946dc558e3bb601fab1e"
     },
     "analysis/run_simulation.sh": {
       "bytes": 2067,
@@ -54,8 +58,8 @@
       "sha256": "eeb73471f47362b3d065a71b089b4904c66d5726f3d0c2cb7e43b5544f207c2d"
     },
     "analysis/verify_artifacts.py": {
-      "bytes": 5705,
-      "sha256": "6acf30d4cf6765984d10729a9c241f99656faa3f3158dc7636a50fe126be0cac"
+      "bytes": 6397,
+      "sha256": "463d7549b629caeaff10de07662244d9d1b8b40ea5e94bb4c1ba8d5030b78109"
     },
     "inputs/dc3/README.md": {
       "bytes": 206,
@@ -301,6 +305,10 @@
       "bytes": 705,
       "sha256": "4dc5670573eab0740d8ea08b242374111d24f1ca6e8a1e47cf846349b9417692"
     },
+    "results/1MeV_A.ambiguous_two_hit.csv.gz": {
+      "bytes": 65411,
+      "sha256": "1d82b852269fc6b2cd1af9db2ddbeb870c8b83874f391834bdd666f6918a2660"
+    },
     "results/1MeV_A.angles.csv.gz": {
       "bytes": 92767,
       "sha256": "23d3366694983223f64890b3ea401cc200193bb66bf459d78a7b173bcc3284d5"
@@ -312,6 +320,10 @@
     "results/1MeV_A.low_phi_diagnostics.csv.gz": {
       "bytes": 252507,
       "sha256": "6ded98f7a3677d7e9843bec7a0f58d1d76735926d8099beef8ebdcaff6ad8501"
+    },
+    "results/300keV.ambiguous_two_hit.csv.gz": {
+      "bytes": 39731,
+      "sha256": "37142e97ddf5ce0b61ee85e11cfa612254f65461f3ce192211212a45fb7953ae"
     },
     "results/300keV.angles.csv.gz": {
       "bytes": 117442,
@@ -325,6 +337,10 @@
       "bytes": 305405,
       "sha256": "93eb8748105d29ed547ace72e9e9b8b47812dd4df0fc1e6926cbce93853b8dfe"
     },
+    "results/3MeV.ambiguous_two_hit.csv.gz": {
+      "bytes": 35617,
+      "sha256": "0107b951b79e447ae60678375c1572f3eeafa95b4251e44f7d85016739ffe9a1"
+    },
     "results/3MeV.angles.csv.gz": {
       "bytes": 50433,
       "sha256": "1c0d32559ca07daa9998cbb9cb499ad948d197e7029db02956d4873bcd9b96d0"
@@ -336,6 +352,18 @@
     "results/3MeV.low_phi_diagnostics.csv.gz": {
       "bytes": 137291,
       "sha256": "7928d58924364ebc16010797ed616a974b14daa659b477faa3a0e7bb449148c6"
+    },
+    "results/ambiguous-two-hit-phi-comparisons.pdf": {
+      "bytes": 580811,
+      "sha256": "27c8980fb52f5f78a14cdcd836b056f415d09adcfba03da00a1c1edf646fc12d"
+    },
+    "results/ambiguous-two-hit-phi-comparisons.png": {
+      "bytes": 256352,
+      "sha256": "66abd1c886792fd27252c10c299afc73491833713287c64bb84d3bb5dcea85a4"
+    },
+    "results/ambiguous_two_hit_summary.json": {
+      "bytes": 22641,
+      "sha256": "f91ba9ae0a9b5bccdc77e6716527926e23308b3de40c622669211eb149062dec"
     },
     "results/compton_angle_density.pdf": {
       "bytes": 610327,

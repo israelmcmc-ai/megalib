@@ -197,12 +197,28 @@ At 3 MeV, only 6 of the 235 low-angle two-hit events have reconstructed energy w
 
 The selected counts are **20 / 36**, **356 / 299**, and **235 / 151**, respectively, for two-hit / >2-hit events at 300 keV, 1 MeV and 3 MeV. The 1 MeV two-hit panel retains the opposite-diagonal population, consistent with the spatial ordering signature above. A smaller diagonal population remains. Event-level diagnostic fields are saved in the three `*.low_phi_diagnostics.csv.gz` tables; totals and definitions are in [low_phi_summary.json](results/low_phi_summary.json).
 
+## Angles for two hit events with ambiguous energy order
+
+This comparison retains **all baseline two-hit events whose selected and reversed energy assignments both pass `MComptonEvent::IsKinematicsOK`**, checked directly against the MEGAlib library. Here, ambiguous means that both orders are kinematically physical; it does not mean their Bayesian probabilities are equal or similar. There is **no angular cut and no photopeak cut**. The true, geometric and kinematic angle definitions remain unchanged, and both reconstructed angles use Revan's selected order rather than averaging or switching between orders.
+
+| Incident energy | Baseline two-hit events | Both energy orders physical | Within the diagnostic ±2% photopeak window |
+| --- | ---: | ---: | ---: |
+| 300 keV | 2,783 | **453** | 393 |
+| 1 MeV | 1,502 | **723** | 484 |
+| 3 MeV | 721 | **370** | 40 |
+
+The last column describes the selected population and is not an additional cut. All 453, 723 and 370 ambiguous-order events are plotted. True Phi is on x in every panel; the upper row has geometric Phi on y, while the lower row has kinematic Phi on y. A single logarithmic count scale is shared across both rows and all energies, with 2° × 2° bins. The event sample is identical between rows.
+
+![True versus geometric Phi and true versus kinematic Phi for all two-hit events with both energy orders physical](results/ambiguous-two-hit-phi-comparisons.png)
+
+The selected events, including their alternative physical kinematic angle and energy-order diagnostic fields, are preserved in the three `*.ambiguous_two_hit.csv.gz` tables. [ambiguous_two_hit_summary.json](results/ambiguous_two_hit_summary.json) records the selection and exact event IDs.
+
 ## Files and reproduction
 
 - [analysis](analysis/) contains the plotting and truth-matching scripts, repository-relative path handling, and rerun helpers.
 - [inputs/massmodel](inputs/massmodel/) contains the tracked upstream mass-model files, including its license. [inputs/dc3](inputs/dc3/) contains the upstream DC3 configuration and Bayesian response files, with the cosi-sim license.
 - [runs](runs/) contains original primary source files, SIM/TRA outputs, compressed logs and the original effective Revan configuration. The archived sources and file headers preserve their original absolute paths.
-- [results](results/) contains all eight figures as PNG and PDF, event-level compressed CSV tables, and machine-readable summaries and normalization data.
+- [results](results/) contains all nine figures as PNG and PDF, event-level compressed CSV tables, and machine-readable summaries and normalization data.
 - [runs/auxiliary](runs/auxiliary/) preserves the 10,000-photon 300 keV pilot, seed 30001, and the independent 1 MeV run with 1,000,000 photons, seed 100102. The auxiliary 1 MeV run is excluded from the three-energy figures.
 - [manifest.json](manifest.json) records SHA-256 hashes for the report files. It can be checked without loading MEGAlib.
 
@@ -239,3 +255,4 @@ After intentional updates to this report, regenerate its manifest with `--update
 | 2026-11-14 | Relative-loss scaling and true/geometric and kinematic/geometric comparisons added. |
 | 2026-11-15 | Results assembled on the report branch with raw data, inputs, scripts, figures and provenance; report established for continued updates. |
 | 2026-11-16 | Investigated the low-kinematic-Phi branch: energy-dependent reverse-order and equal-deposit boundaries, Bayesian order-choice statistics, truth-history and energy-response diagnostics, and true/geometric angle plots below the common 29.606° cut. |
+| 2026-11-16 | Added true/geometric and true/kinematic Phi comparisons for all two-hit events with both energy orders physical, with native kinematics checks, exact event lists and no angular or photopeak cut. |
