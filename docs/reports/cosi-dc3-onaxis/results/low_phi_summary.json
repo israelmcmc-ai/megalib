@@ -1,0 +1,220 @@
+{
+  "common_cut_deg": 29.606366796036387,
+  "cut_definition": "Common Phi_kin < 2 asin(510.99895/(2*1000)) in all panels; nominal 1 MeV two-hit reverse-order boundary, not a universal cut.",
+  "proximity_definition": "True first primary COMP is <0.3 cm from reconstructed C2 and at least 0.05 cm nearer C2 than C1; this is a spatial signature, not full truth-order attribution.",
+  "energies": {
+    "300keV": {
+      "nominal_two_hit_boundary_deg": 116.78643857447912,
+      "nominal_equal_deposit_angle_deg": 134.6947712687127,
+      "threshold_18keV_nominal_min_phi_deg": 26.965867523555684,
+      "two_hit_order_choice": {
+        "both_orders_physical": 453,
+        "both_orders_physical_larger_first": 253,
+        "photopeak_both_orders_physical": 393,
+        "photopeak_both_orders_physical_larger_first": 237
+      },
+      "2 hits": {
+        "below_common_cut": {
+          "events": 20,
+          "photopeak_within_2percent": 19,
+          "raw_ge_within_2percent": 19,
+          "kinematic_true_difference_over_20deg": 2,
+          "reverse_order_unphysical": 20,
+          "more_than_one_primary_compton": 11,
+          "true_first_nearer_C2_within_3mm": 2,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 0,
+          "photopeak_bad_events": 2,
+          "photopeak_bad_with_multiple_primary_comptons": 2,
+          "photopeak_bad_true_first_nearer_C2": 1
+        },
+        "at_or_above_common_cut": {
+          "events": 2763,
+          "photopeak_within_2percent": 1834,
+          "raw_ge_within_2percent": 2097,
+          "kinematic_true_difference_over_20deg": 1132,
+          "reverse_order_unphysical": 2310,
+          "more_than_one_primary_compton": 1818,
+          "true_first_nearer_C2_within_3mm": 497,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 0,
+          "photopeak_bad_events": 503,
+          "photopeak_bad_with_multiple_primary_comptons": 384,
+          "photopeak_bad_true_first_nearer_C2": 226
+        }
+      },
+      ">2 hits": {
+        "below_common_cut": {
+          "events": 36,
+          "photopeak_within_2percent": 31,
+          "raw_ge_within_2percent": 36,
+          "kinematic_true_difference_over_20deg": 14,
+          "reverse_order_unphysical": null,
+          "more_than_one_primary_compton": 36,
+          "true_first_nearer_C2_within_3mm": 9,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 0,
+          "photopeak_bad_events": 13,
+          "photopeak_bad_with_multiple_primary_comptons": 13,
+          "photopeak_bad_true_first_nearer_C2": 7
+        },
+        "at_or_above_common_cut": {
+          "events": 1130,
+          "photopeak_within_2percent": 758,
+          "raw_ge_within_2percent": 967,
+          "kinematic_true_difference_over_20deg": 324,
+          "reverse_order_unphysical": null,
+          "more_than_one_primary_compton": 1129,
+          "true_first_nearer_C2_within_3mm": 92,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 1,
+          "photopeak_bad_events": 164,
+          "photopeak_bad_with_multiple_primary_comptons": 163,
+          "photopeak_bad_true_first_nearer_C2": 40
+        }
+      }
+    },
+    "1MeV_A": {
+      "nominal_two_hit_boundary_deg": 29.606366796036387,
+      "nominal_equal_deposit_angle_deg": 60.7250553836586,
+      "threshold_18keV_nominal_min_phi_deg": 7.848157575049011,
+      "two_hit_order_choice": {
+        "both_orders_physical": 723,
+        "both_orders_physical_larger_first": 691,
+        "photopeak_both_orders_physical": 484,
+        "photopeak_both_orders_physical_larger_first": 481
+      },
+      "2 hits": {
+        "below_common_cut": {
+          "events": 356,
+          "photopeak_within_2percent": 147,
+          "raw_ge_within_2percent": 147,
+          "kinematic_true_difference_over_20deg": 271,
+          "reverse_order_unphysical": 356,
+          "more_than_one_primary_compton": 332,
+          "true_first_nearer_C2_within_3mm": 274,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 1,
+          "photopeak_bad_events": 108,
+          "photopeak_bad_with_multiple_primary_comptons": 105,
+          "photopeak_bad_true_first_nearer_C2": 107
+        },
+        "at_or_above_common_cut": {
+          "events": 1146,
+          "photopeak_within_2percent": 484,
+          "raw_ge_within_2percent": 490,
+          "kinematic_true_difference_over_20deg": 616,
+          "reverse_order_unphysical": 423,
+          "more_than_one_primary_compton": 918,
+          "true_first_nearer_C2_within_3mm": 208,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 5,
+          "photopeak_bad_events": 111,
+          "photopeak_bad_with_multiple_primary_comptons": 91,
+          "photopeak_bad_true_first_nearer_C2": 42
+        }
+      },
+      ">2 hits": {
+        "below_common_cut": {
+          "events": 299,
+          "photopeak_within_2percent": 156,
+          "raw_ge_within_2percent": 167,
+          "kinematic_true_difference_over_20deg": 123,
+          "reverse_order_unphysical": null,
+          "more_than_one_primary_compton": 297,
+          "true_first_nearer_C2_within_3mm": 60,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 1,
+          "photopeak_bad_events": 31,
+          "photopeak_bad_with_multiple_primary_comptons": 30,
+          "photopeak_bad_true_first_nearer_C2": 22
+        },
+        "at_or_above_common_cut": {
+          "events": 1262,
+          "photopeak_within_2percent": 892,
+          "raw_ge_within_2percent": 913,
+          "kinematic_true_difference_over_20deg": 425,
+          "reverse_order_unphysical": null,
+          "more_than_one_primary_compton": 1259,
+          "true_first_nearer_C2_within_3mm": 82,
+          "cluster_at_1800keV": 0,
+          "ge_measurement_deficit_over_50keV": 1,
+          "photopeak_bad_events": 169,
+          "photopeak_bad_with_multiple_primary_comptons": 169,
+          "photopeak_bad_true_first_nearer_C2": 36
+        }
+      }
+    },
+    "3MeV": {
+      "nominal_two_hit_boundary_deg": 9.771197712393551,
+      "nominal_equal_deposit_angle_deg": 33.93545225403604,
+      "threshold_18keV_nominal_min_phi_deg": 2.5984038878069105,
+      "two_hit_order_choice": {
+        "both_orders_physical": 370,
+        "both_orders_physical_larger_first": 352,
+        "photopeak_both_orders_physical": 40,
+        "photopeak_both_orders_physical_larger_first": 37
+      },
+      "2 hits": {
+        "below_common_cut": {
+          "events": 235,
+          "photopeak_within_2percent": 6,
+          "raw_ge_within_2percent": 41,
+          "kinematic_true_difference_over_20deg": 202,
+          "reverse_order_unphysical": 232,
+          "more_than_one_primary_compton": 219,
+          "true_first_nearer_C2_within_3mm": 125,
+          "cluster_at_1800keV": 60,
+          "ge_measurement_deficit_over_50keV": 132,
+          "photopeak_bad_events": 6,
+          "photopeak_bad_with_multiple_primary_comptons": 6,
+          "photopeak_bad_true_first_nearer_C2": 6
+        },
+        "at_or_above_common_cut": {
+          "events": 486,
+          "photopeak_within_2percent": 39,
+          "raw_ge_within_2percent": 126,
+          "kinematic_true_difference_over_20deg": 297,
+          "reverse_order_unphysical": 119,
+          "more_than_one_primary_compton": 413,
+          "true_first_nearer_C2_within_3mm": 59,
+          "cluster_at_1800keV": 82,
+          "ge_measurement_deficit_over_50keV": 134,
+          "photopeak_bad_events": 10,
+          "photopeak_bad_with_multiple_primary_comptons": 8,
+          "photopeak_bad_true_first_nearer_C2": 1
+        }
+      },
+      ">2 hits": {
+        "below_common_cut": {
+          "events": 151,
+          "photopeak_within_2percent": 58,
+          "raw_ge_within_2percent": 71,
+          "kinematic_true_difference_over_20deg": 68,
+          "reverse_order_unphysical": null,
+          "more_than_one_primary_compton": 144,
+          "true_first_nearer_C2_within_3mm": 28,
+          "cluster_at_1800keV": 18,
+          "ge_measurement_deficit_over_50keV": 26,
+          "photopeak_bad_events": 13,
+          "photopeak_bad_with_multiple_primary_comptons": 12,
+          "photopeak_bad_true_first_nearer_C2": 7
+        },
+        "at_or_above_common_cut": {
+          "events": 742,
+          "photopeak_within_2percent": 168,
+          "raw_ge_within_2percent": 447,
+          "kinematic_true_difference_over_20deg": 287,
+          "reverse_order_unphysical": null,
+          "more_than_one_primary_compton": 715,
+          "true_first_nearer_C2_within_3mm": 65,
+          "cluster_at_1800keV": 219,
+          "ge_measurement_deficit_over_50keV": 341,
+          "photopeak_bad_events": 35,
+          "photopeak_bad_with_multiple_primary_comptons": 33,
+          "photopeak_bad_true_first_nearer_C2": 10
+        }
+      }
+    }
+  }
+}

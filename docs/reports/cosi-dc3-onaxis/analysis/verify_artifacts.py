@@ -22,6 +22,8 @@ def verify_tables():
     geometry=json.loads((RESULTS/'geometric_phi_summary.json').read_text())
     kn=json.loads((RESULTS/'phi_klein_nishina_data.json').read_text())
     losses=json.loads((RESULTS/'phi_relative_loss_scaling.json').read_text())
+    low_phi=json.loads((RESULTS/'low_phi_summary.json').read_text())
+    assert math.isclose(low_phi['common_cut_deg'],2*math.degrees(math.asin(510.99895/2000)),abs_tol=1e-12)
     for name,s in summaries.items():
         with gzip.open(RESULTS/f'{name}.angles.csv.gz','rt') as f:
             rows=list(csv.DictReader(f))
@@ -43,6 +45,28 @@ def verify_tables():
         assert {int(r['event_id']) for r in geometric}==ids,name
         assert len(geometric)==len(rows),name
         assert all(0<=float(r['geometric_angle_deg'])<=180 for r in geometric),name
+        with gzip.open(RESULTS/f'{name}.low_phi_diagnostics.csv.gz','rt') as f:
+            diagnostics=list(csv.DictReader(f))
+        assert {int(r['event_id']) for r in diagnostics}==ids,name
+        assert len(diagnostics)==len(rows),name
+        for mult,label in [(2,'2 hits'),(3,'>2 hits')]:
+            group=[r for r in diagnostics if (int(r['reconstructed_hits'])==2 if mult==2 else int(r['reconstructed_hits'])>2)]
+            for below,key in [(True,'below_common_cut'),(False,'at_or_above_common_cut')]:
+                selected=[r for r in group if (float(r['kinematic_angle_deg'])<low_phi['common_cut_deg'])==below]
+                counts=low_phi['energies'][name][label][key]
+                assert len(selected)==counts['events'],(name,label,key)
+                assert sum(abs(float(r['kinematic_angle_deg'])-float(r['true_angle_deg']))>20 for r in selected)==counts['kinematic_true_difference_over_20deg']
+            for r in group:
+                if mult==2:
+                    valid=r['reverse_order_physical']=='True'
+                    assert valid==(float(r['kinematic_angle_deg'])>=float(r['two_deposit_boundary_deg']))
+                else: assert r['reverse_order_physical']=='',name
+        ambiguous=[r for r in diagnostics if int(r['reconstructed_hits'])==2 and r['reverse_order_physical']=='True']
+        photo_ambiguous=[r for r in ambiguous if r['photopeak_within_2percent']=='True']
+        choices=low_phi['energies'][name]['two_hit_order_choice']
+        assert len(ambiguous)==choices['both_orders_physical']
+        assert len(photo_ambiguous)==choices['photopeak_both_orders_physical']
+        assert sum(r['larger_first_deposit']=='True' for r in photo_ambiguous)==choices['photopeak_both_orders_physical_larger_first']
     for path in (REPORT/'runs').rglob('*.gz'):
         with gzip.open(path,'rb') as f:
             while f.read(1024*1024): pass

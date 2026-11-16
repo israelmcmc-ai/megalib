@@ -7,3 +7,4 @@ python_bin=${PYTHON:-python}
 "$python_bin" "$analysis_dir/plot_klein_nishina.py"
 "$python_bin" "$analysis_dir/plot_phi_relative_loss.py"
 "$python_bin" "$analysis_dir/plot_geometric_phi.py"
+"$python_bin" "$analysis_dir/study_low_phi.py"

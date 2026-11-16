@@ -14,8 +14,8 @@
       "sha256": "3ddae99f8ee0ef06448ae99505d93cc75d095cdef35cec1f15f5e849fe8a9d2a"
     },
     "README.md": {
-      "bytes": 15823,
-      "sha256": "cd078d8556a5289f001c102111271d356be8dbf5eba649240433df993a5df519"
+      "bytes": 24372,
+      "sha256": "21bb54af551f9935c4ed5bee9137fae80d6cf2bd7791acf5484cebcad6d1e568"
     },
     "analysis/analyze.py": {
       "bytes": 5203,
@@ -42,16 +42,20 @@
       "sha256": "2714394b107ad6583c0baea28e18324137a4dd13df3978892164cd08c09f7622"
     },
     "analysis/regenerate.sh": {
-      "bytes": 381,
-      "sha256": "f7659c354a5700bfac6c38eae7c07ddd1e3ffd5dbe4d65b18fc8d61c07de960a"
+      "bytes": 428,
+      "sha256": "3e076a1b2fa4cf508f0e9a199423a9443bccbcbdce423abf5bdff14a48136e50"
     },
     "analysis/run_simulation.sh": {
       "bytes": 2067,
       "sha256": "a8bfa2b6fd25e9323676ff8e70741f75475854088514107bae8f2cb94f226152"
     },
+    "analysis/study_low_phi.py": {
+      "bytes": 12598,
+      "sha256": "eeb73471f47362b3d065a71b089b4904c66d5726f3d0c2cb7e43b5544f207c2d"
+    },
     "analysis/verify_artifacts.py": {
-      "bytes": 3764,
-      "sha256": "8f77f860170f5a9e98b7a5361c176e66c7dc98893bb397e76412065f2612c844"
+      "bytes": 5705,
+      "sha256": "6acf30d4cf6765984d10729a9c241f99656faa3f3158dc7636a50fe126be0cac"
     },
     "inputs/dc3/README.md": {
       "bytes": 206,
@@ -305,6 +309,10 @@
       "bytes": 93119,
       "sha256": "ac12c9f54630199265fd72fddc690268944beb2378c92fdf7957308ee0423279"
     },
+    "results/1MeV_A.low_phi_diagnostics.csv.gz": {
+      "bytes": 252507,
+      "sha256": "6ded98f7a3677d7e9843bec7a0f58d1d76735926d8099beef8ebdcaff6ad8501"
+    },
     "results/300keV.angles.csv.gz": {
       "bytes": 117442,
       "sha256": "60f250d02a556b5a4031f0701d4d6540e335f5e421142b2998f3aaec0d4d284e"
@@ -313,6 +321,10 @@
       "bytes": 118842,
       "sha256": "4a54fb24b1b6ed24a41a466a77774e8f18e6ccaa110e819b6462a2ad1a7a81d1"
     },
+    "results/300keV.low_phi_diagnostics.csv.gz": {
+      "bytes": 305405,
+      "sha256": "93eb8748105d29ed547ace72e9e9b8b47812dd4df0fc1e6926cbce93853b8dfe"
+    },
     "results/3MeV.angles.csv.gz": {
       "bytes": 50433,
       "sha256": "1c0d32559ca07daa9998cbb9cb499ad948d197e7029db02956d4873bcd9b96d0"
@@ -320,6 +332,10 @@
     "results/3MeV.geometric_angles.csv.gz": {
       "bytes": 49827,
       "sha256": "11fab2bc16a1d90cfba223eb1f2524937881308032869ea1360fa1c918d33b0a"
+    },
+    "results/3MeV.low_phi_diagnostics.csv.gz": {
+      "bytes": 137291,
+      "sha256": "7928d58924364ebc16010797ed616a974b14daa659b477faa3a0e7bb449148c6"
     },
     "results/compton_angle_density.pdf": {
       "bytes": 610327,
@@ -353,6 +369,10 @@
       "bytes": 275084,
       "sha256": "820502985893be49c85f49b072489c5c5743a017cc3257c9105fd56353d6688e"
     },
+    "results/low_phi_summary.json": {
+      "bytes": 8903,
+      "sha256": "8f20ccdcf09fa3114973b9353f83c37e8b09ce18263ff45135caaffe1ffe742c"
+    },
     "results/methods.json": {
       "bytes": 1925,
       "sha256": "85ca2524d377a04b7b5d02d87d085b287fbc9ee735ca9cbc4a1d0422acd1866e"
@@ -385,6 +405,14 @@
       "bytes": 1096,
       "sha256": "5976969a000e433540e82d7218350b820ef06b73be34efc9b6113bb34b9d9127"
     },
+    "results/true-vs-geometric-low-kinematic-phi.pdf": {
+      "bytes": 574565,
+      "sha256": "116a41161e064bc81a13294d3fcac65787b8748d7ce341e9bf1134016353698e"
+    },
+    "results/true-vs-geometric-low-kinematic-phi.png": {
+      "bytes": 251646,
+      "sha256": "4d37ae9be3f2a53b34210abea53b9cfb93cf118024f89bd046bf75ff9d2188b1"
+    },
     "results/true-vs-geometric-phi.pdf": {
       "bytes": 597951,
       "sha256": "22f4b6591d251b7dd2f65d6c9d2ef6096475f2d344c1256efaa5d9948f7af263"
@@ -392,6 +420,14 @@
     "results/true-vs-geometric-phi.png": {
       "bytes": 273416,
       "sha256": "9caa38f02e00e90e2c9077ba892af8257b15ea3004ab57254acfa920ebe50500"
+    },
+    "results/two-hit-ambiguity-boundary.pdf": {
+      "bytes": 240657,
+      "sha256": "4955bd5ff832324f67145f382d110dcbcb1b465758588f3a4c6a1604b39a0d9f"
+    },
+    "results/two-hit-ambiguity-boundary.png": {
+      "bytes": 435403,
+      "sha256": "99b7fd4c5b9a6083e8792b0e5a406cd5f84b1ba9d84086a6d94dcb59a82cdc86"
     },
     "runs/1MeV_A.cosima.log.gz": {
       "bytes": 1955117,

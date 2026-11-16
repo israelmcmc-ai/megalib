@@ -4,7 +4,7 @@ This study compares true, kinematic and geometric Compton angles for monoenerget
 
 The selected sample contains 3,949, 3,063 and 1,614 truth-matched Compton events at the three energies. The figures show a diagonal population together with substantial tails. The true-angle distribution of selected events differs from the free-electron Klein–Nishina distribution because detector response, event selection and hit multiplicity condition that sample. The relative-loss normalization below illustrates deficits in shape; it does not measure absolute efficiency.
 
-Last updated: **2026-11-15**. Branch: `reports/cosi-dc3-onaxis-compton`. This is the working report for subsequent requested analyses in this conversation.
+Last updated: **2026-11-16**. Branch: `reports/cosi-dc3-onaxis-compton`. This is the working report for subsequent requested analyses in this conversation.
 
 ## Simulation and reconstruction
 
@@ -123,7 +123,7 @@ True Phi is on x and geometric Phi is on y.
 
 ![True and geometric Compton angles split by reconstructed hit count](results/true-vs-geometric-phi.png)
 
-The diagonal is accompanied by a population near the opposite diagonal. Reversing a two-site vector maps an angle to approximately `180° − Phi`, which is consistent with an interaction-order contribution. No truth-order classification has yet been performed to quantify that contribution.
+The diagonal is accompanied by a population near the opposite diagonal. Reversing a two-site vector maps an angle to approximately `180° − Phi`, which is consistent with an interaction-order contribution. The low-angle study below quantifies a spatial reversal signature; it does not assign raw interaction origins to reconstructed clusters.
 
 ### Kinematic Phi and geometric Phi
 
@@ -133,12 +133,76 @@ Kinematic Phi is on x and geometric Phi is on y.
 
 Agreement and off-diagonal populations reflect the relationship between Revan's energy-based angle and its ordered spatial vector. This comparison uses the known source direction; it does not reconstruct the source direction from an individual event.
 
+## Low kinematic Phi branch and the apparent 30 degree gap
+
+The gap at approximately 30° in the 1 MeV two-hit sample is associated with **energy-order ambiguity and Bayesian sequence choice**, rather than a universal angular cut. The relevant boundaries depend on the measured total energy; missing energy shifts them. These statements concern a two-deposit full-absorption interpretation, which can itself be wrong for an event with multiple unresolved or missed interactions.
+
+### Kinematic boundaries
+
+Let `E = e + g` be the reconstructed total energy, with `e` assigned to the first electron deposit and `g` to the remaining photon. The reverse energy order has:
+
+`cos(Phi_reverse) = 1 − m_e c² × [1/e − 1/E]`.
+
+Requiring this cosine to reach −1 gives `e = m_e c² E / (m_e c² + 2 E)`. Substitution into the selected-order Compton formula yields the reverse-order boundary:
+
+`Phi_boundary(E) = 2 asin[m_e c² / (2 E)]`, for `E ≥ m_e c²/2`.
+
+Below that angle, only the selected energy order is physical under the two-deposit model. Above it, both energy orders are physical. This analytic classification was checked against `MComptonEvent::IsKinematicsOK(g, e)` for every archived two-hit plotted event. For reconstructed energies below `m_e c²/2`, no selected angle admits two physical energy orders.
+
+An additional boundary separates smaller and larger first deposits. For `e = g = E/2`, `Phi_equal(E) = acos[1 − m_e c²/E]`. Choosing `e ≥ g` places the reconstructed angle at or above this equal-deposit angle.
+
+| Nominal incident energy | Reverse-order boundary for a full-energy event | Equal-deposit angle | Approximate first-scatter floor from an 18 keV deposit threshold |
+| --- | ---: | ---: | ---: |
+| 300 keV | 116.79° | 134.69° | 26.97° |
+| 1 MeV | **29.61°** | **60.73°** | 7.85° |
+| 3 MeV | 9.77° | 33.94° | 2.60° |
+
+The threshold floor uses the ideal single-scatter relation before noise, merging or missed hits; it is not a hard cut on the saved reconstructed angles. In particular, the sparse 300 keV population below 30° is near its deposit threshold, whereas the 1 MeV 30° division is far above the ideal threshold floor.
+
+### Sequence choice explains the valley
+
+Of the 1 MeV two-hit events within ±2% of the incident energy, 484 admit both energy orders. Revan selects the larger first deposit in **481 of those 484 events**. In the same full-energy two-hit sample, 147 events fall below the common 29.606° cut, only 3 fall between that cut and the nominal 60.725° equal-deposit angle, and 481 lie at or above the equal-deposit angle. The alternative physical ordering of the high-angle events supplies angles in the otherwise depleted interval.
+
+This is an observed preference of the configured Bayesian reconstruction, not an explicit `Phi = 30°` veto. [`MERCSRBayesian::ComputeQualityFactor`](../../../src/revan/src/MERCSRBayesian.cxx) scores the two-hit energy, cosine, attenuation distance and material against its good/bad response tables; [`MERCSR::ComputeAllQualityFactors`](../../../src/revan/src/MERCSR.cxx) evaluates permutations and the best score determines the saved sequence. The supplied angular response bins also have finite resolution in cosine. No ablation of the individual response factors was performed, so the specific learned likelihood term responsible for the preference is not isolated.
+
+![Reconstructed energy and Phi with two-hit ambiguity boundaries, and selected versus alternative energy-order histograms](results/two-hit-ambiguity-boundary.png)
+
+The upper panels show measured total energy versus kinematic Phi for two-hit events. The solid teal curve is the event-dependent reverse-order boundary, the dashed purple curve is the equal-deposit angle, and the dotted vertical line marks incident energy. The lower panels separate the selected events by whether the other energy order is physical; the gray dotted histogram shows that alternative angle for the events with two physical orders. The vertical markers are evaluated at nominal incident energy, so incomplete-energy events need not follow those fixed nominal markers.
+
+### What populates the low angle branch
+
+For the requested low-angle comparison, the same strict cut **`Phi_kin < 29.606366796°`** is applied at all three energies. It is derived from the nominal 1 MeV two-hit boundary; it is not claimed to be a universal ambiguity boundary, and the two-hit order argument does not apply directly to >2-hit sequences. The validation, truth matching and reconstructed hit-count definitions are unchanged. There is no photopeak cut in the figure.
+
+| Quantity below the common cut | 300 keV, 2 hits | 1 MeV, 2 hits | 3 MeV, 2 hits |
+| --- | ---: | ---: | ---: |
+| Events | 20 | 356 | 235 |
+| Reverse energy order unphysical | 20 | 356 | 232 |
+| Kinematic minus true angle differs by more than 20° in magnitude | 2 | **271** | 202 |
+| More than one primary-photon Compton interaction in the SIM history | 11 | **332** | 219 |
+| True first COMP is near reconstructed C2 rather than C1 | 2 | **274** | 125 |
+| Reconstructed energy within ±2% of incident energy | 19 | 147 | 6 |
+| Simulated Ge deposit exceeds reconstructed energy by >50 keV | 0 | 1 | 132 |
+
+The spatial signature in the table requires the first true primary Compton position to be within 3 mm of C2, and at least 0.5 mm closer to C2 than C1. It supports an ordering interpretation but is not an interaction-origin assignment for merged hits. The first-primary scatter can be in passive material under the main truth definition.
+
+At 1 MeV, **108 of the 147 photopeak two-hit events below the cut** differ from true Phi by more than 20°. Of those 108, 105 have multiple primary Compton scatters, and 107 have the first true scatter near C2 rather than C1. Thus missing total energy alone does not explain the low-angle contamination: a two-hit reconstruction can represent a more complex true history, with unresolved, merged or missed interactions and a reversed spatial sequence. Passing kinematics under the two-deposit interpretation does not establish the correct physical order.
+
+For example, stored **1 MeV event 41** has true Phi **121.51°** but reconstructed kinematic Phi **20.32°**. Its SIM history has **four primary Compton interactions**, and the total simulated Ge deposit is 1000 keV. Revan reduces it to two reconstructed hits with assigned first/remaining energies of **107.734 / 888.080 keV**, totaling **995.814 keV**. The first true Compton position is only **0.46 mm from C2**, compared with **8.55 mm from C1**. This is a concrete full-energy example of a complex interaction history represented by two hits and assigned a misleading low-angle, otherwise physical energy ordering.
+
+At 3 MeV, only 6 of the 235 low-angle two-hit events have reconstructed energy within ±2% of incident energy. There are also substantial differences between the simulated Ge energy deposit and the reconstructed total. Sixty events have a reconstructed cluster at 1800 keV to within 0.1 keV, a sufficient but incomplete saturation signature because clustering can combine individual deposits. The configured overflow is applied by [`MDDetector::ApplyOverflow`](../../../src/geomega/src/MDDetector.cxx), and [`MDStrip3D::Noise`](../../../src/geomega/src/MDStrip3D.cxx) flags the overflow and loses depth information. These observations establish additional energy-response effects in this sample; they do not attribute every energy deficit solely to saturation rather than thresholds or other detector processing.
+
+### True and geometric angles below the cut
+
+![True versus geometric Phi for events with kinematic Phi below 29.606 degrees, split into two and more than two hits](results/true-vs-geometric-low-kinematic-phi.png)
+
+The selected counts are **20 / 36**, **356 / 299**, and **235 / 151**, respectively, for two-hit / >2-hit events at 300 keV, 1 MeV and 3 MeV. The 1 MeV two-hit panel retains the opposite-diagonal population, consistent with the spatial ordering signature above. A smaller diagonal population remains. Event-level diagnostic fields are saved in the three `*.low_phi_diagnostics.csv.gz` tables; totals and definitions are in [low_phi_summary.json](results/low_phi_summary.json).
+
 ## Files and reproduction
 
 - [analysis](analysis/) contains the plotting and truth-matching scripts, repository-relative path handling, and rerun helpers.
 - [inputs/massmodel](inputs/massmodel/) contains the tracked upstream mass-model files, including its license. [inputs/dc3](inputs/dc3/) contains the upstream DC3 configuration and Bayesian response files, with the cosi-sim license.
 - [runs](runs/) contains original primary source files, SIM/TRA outputs, compressed logs and the original effective Revan configuration. The archived sources and file headers preserve their original absolute paths.
-- [results](results/) contains all six figures as PNG and PDF, event-level compressed CSV tables, and machine-readable summaries and normalization data.
+- [results](results/) contains all eight figures as PNG and PDF, event-level compressed CSV tables, and machine-readable summaries and normalization data.
 - [runs/auxiliary](runs/auxiliary/) preserves the 10,000-photon 300 keV pilot, seed 30001, and the independent 1 MeV run with 1,000,000 photons, seed 100102. The auxiliary 1 MeV run is excluded from the three-energy figures.
 - [manifest.json](manifest.json) records SHA-256 hashes for the report files. It can be checked without loading MEGAlib.
 
@@ -174,3 +238,4 @@ After intentional updates to this report, regenerate its manifest with `--update
 | 2026-11-13 | Phi distributions compared with Klein–Nishina; full-curve y-axis limits applied. |
 | 2026-11-14 | Relative-loss scaling and true/geometric and kinematic/geometric comparisons added. |
 | 2026-11-15 | Results assembled on the report branch with raw data, inputs, scripts, figures and provenance; report established for continued updates. |
+| 2026-11-16 | Investigated the low-kinematic-Phi branch: energy-dependent reverse-order and equal-deposit boundaries, Bayesian order-choice statistics, truth-history and energy-response diagnostics, and true/geometric angle plots below the common 29.606° cut. |
